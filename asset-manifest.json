@@ -1,25 +1,29 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/portfolio/static/js/main.920d6f08.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.920d6f08.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.c3f45607.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.c3f45607.js.map",
-    "static/js/2.b6da6742.chunk.js": "/portfolio/static/js/2.b6da6742.chunk.js",
-    "static/js/2.b6da6742.chunk.js.map": "/portfolio/static/js/2.b6da6742.chunk.js.map",
-    "static/js/3.a7a09aa4.chunk.js": "/portfolio/static/js/3.a7a09aa4.chunk.js",
-    "static/js/3.a7a09aa4.chunk.js.map": "/portfolio/static/js/3.a7a09aa4.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.3ec52869.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.3ec52869.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.3d32baca.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.3d32baca.js.map",
+    "static/css/2.29c2f1c0.chunk.css": "/portfolio/static/css/2.29c2f1c0.chunk.css",
+    "static/js/2.7517250b.chunk.js": "/portfolio/static/js/2.7517250b.chunk.js",
+    "static/js/2.7517250b.chunk.js.map": "/portfolio/static/js/2.7517250b.chunk.js.map",
+    "static/js/3.7c7b4e7a.chunk.js": "/portfolio/static/js/3.7c7b4e7a.chunk.js",
+    "static/js/3.7c7b4e7a.chunk.js.map": "/portfolio/static/js/3.7c7b4e7a.chunk.js.map",
     "index.html": "/portfolio/index.html",
+    "static/css/2.29c2f1c0.chunk.css.map": "/portfolio/static/css/2.29c2f1c0.chunk.css.map",
     "static/css/main.6dea0f05.chunk.css.map": "/portfolio/static/css/main.6dea0f05.chunk.css.map",
-    "static/js/2.b6da6742.chunk.js.LICENSE.txt": "/portfolio/static/js/2.b6da6742.chunk.js.LICENSE.txt",
+    "static/js/2.7517250b.chunk.js.LICENSE.txt": "/portfolio/static/js/2.7517250b.chunk.js.LICENSE.txt",
     "static/media/bkgd_About.478babeb.jpg": "/portfolio/static/media/bkgd_About.478babeb.jpg",
+    "static/media/logo_jenPlaza.d8b810f3.png": "/portfolio/static/media/logo_jenPlaza.d8b810f3.png",
     "static/media/modalBkgd.9bba4f3e.png": "/portfolio/static/media/modalBkgd.9bba4f3e.png",
     "static/media/unite.ad5f5576.jpg": "/portfolio/static/media/unite.ad5f5576.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.c3f45607.js",
-    "static/js/2.b6da6742.chunk.js",
+    "static/js/runtime-main.3d32baca.js",
+    "static/css/2.29c2f1c0.chunk.css",
+    "static/js/2.7517250b.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.920d6f08.chunk.js"
+    "static/js/main.3ec52869.chunk.js"
   ]
 }
