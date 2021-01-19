@@ -137,6 +137,7 @@ export default function About() {
   const classes = useStyles();
   return (
     <div className={classes.root} style={styles.container}>
+      <h2>About</h2>
       <Grid container spacing={0}>
         {/* HEADER */}
         <Grid container spacing={0} className={classes.containerColumn}>

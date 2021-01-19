@@ -32,6 +32,7 @@ export default function Home() {
   const classes = useStyles();
   return (
     <div className={classes.root} style={styles.container}>
+      <h2>Home</h2>
       <Grid container spacing={0}>
         <Grid item xs={12} className={classes.aboutMeRow}>
           <AboutMe />
