@@ -2,35 +2,42 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 //pages
-import Home from './pages/index';
+import Home from './pages/home';
 import About from './pages/about';
-import Header from './components/Header/header';
+import Users from './pages/users';
 
 export default function App() {
   return (
     <Router>
       <div>
-        {/* <nav>
+        <nav>
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/portfolio/">Home</Link>
             </li>
             <li>
-              <Link to="/aboutme">About</Link>
+              <Link to="/portfolio/aboutme">About</Link>
             </li>
           </ul>
-        </nav> */}
-        <Header />
+        </nav>
 
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
-        <Switch>
-          <Route exact path="/aboutme">
+        {/* <Switch>
+          <Route path="/about">
             <About />
           </Route>
           <Route exact path="/">
             <Home />
           </Route>
+        </Switch> */}
+        <Switch>
+          <Route exact path={process.env.PUBLIC_URL + '/'} component={Home} />
+          <Route
+            exact
+            path={process.env.PUBLIC_URL + '/aboutme'}
+            component={About}
+          />
         </Switch>
       </div>
     </Router>
