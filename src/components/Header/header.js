@@ -118,7 +118,7 @@ const Header = (props) => {
                 <Link
                   className={classes.navLink}
                   //href="https://jenplaza.github.io/jennplaza/"
-                  href="/portfolio/"
+                  href="/"
                 >
                   Home
                   {/*  </NavLink> */}
@@ -130,7 +130,7 @@ const Header = (props) => {
                   className={classes.navLink}
                   //href="https://jenplaza.github.io/jennplaza-aboutme/"
                   //href="/jennplaza/about/"
-                  href="/portfolio/aboutme/"
+                  href="/aboutme/"
                 >
                   About
                   {/*  </NavLink> */}
