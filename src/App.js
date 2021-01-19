@@ -58,7 +58,7 @@ export default function App() {
               <Route exact path={process.env.PUBLIC_URL + '/'}>
                 <Home />
               </Route>
-              <Route exact path={process.env.PUBLIC_URL + '/aboutme'}>
+              <Route path={process.env.PUBLIC_URL + '/aboutme'}>
                 <About />
               </Route>
             </Switch>
