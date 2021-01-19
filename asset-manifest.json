@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/portfolio/static/js/main.85f42e83.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.85f42e83.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.39d15dc0.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.39d15dc0.js.map",
+    "main.js": "/portfolio/static/js/main.a8f13743.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.a8f13743.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.0627fe81.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.0627fe81.js.map",
     "static/css/2.29c2f1c0.chunk.css": "/portfolio/static/css/2.29c2f1c0.chunk.css",
-    "static/js/2.bad958dd.chunk.js": "/portfolio/static/js/2.bad958dd.chunk.js",
-    "static/js/2.bad958dd.chunk.js.map": "/portfolio/static/js/2.bad958dd.chunk.js.map",
-    "static/js/3.2bd5b506.chunk.js": "/portfolio/static/js/3.2bd5b506.chunk.js",
-    "static/js/3.2bd5b506.chunk.js.map": "/portfolio/static/js/3.2bd5b506.chunk.js.map",
+    "static/js/2.666374ea.chunk.js": "/portfolio/static/js/2.666374ea.chunk.js",
+    "static/js/2.666374ea.chunk.js.map": "/portfolio/static/js/2.666374ea.chunk.js.map",
+    "static/js/3.ba43cfc0.chunk.js": "/portfolio/static/js/3.ba43cfc0.chunk.js",
+    "static/js/3.ba43cfc0.chunk.js.map": "/portfolio/static/js/3.ba43cfc0.chunk.js.map",
     "index.html": "/portfolio/index.html",
     "static/css/2.29c2f1c0.chunk.css.map": "/portfolio/static/css/2.29c2f1c0.chunk.css.map",
     "static/css/main.6dea0f05.chunk.css.map": "/portfolio/static/css/main.6dea0f05.chunk.css.map",
-    "static/js/2.bad958dd.chunk.js.LICENSE.txt": "/portfolio/static/js/2.bad958dd.chunk.js.LICENSE.txt",
+    "static/js/2.666374ea.chunk.js.LICENSE.txt": "/portfolio/static/js/2.666374ea.chunk.js.LICENSE.txt",
     "static/media/bkgd_About.478babeb.jpg": "/portfolio/static/media/bkgd_About.478babeb.jpg",
     "static/media/logo_JPbtn.d62b9573.png": "/portfolio/static/media/logo_JPbtn.d62b9573.png",
     "static/media/logo_jenPlaza.d8b810f3.png": "/portfolio/static/media/logo_jenPlaza.d8b810f3.png",
@@ -21,10 +21,10 @@
     "static/media/unite.ad5f5576.jpg": "/portfolio/static/media/unite.ad5f5576.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.39d15dc0.js",
+    "static/js/runtime-main.0627fe81.js",
     "static/css/2.29c2f1c0.chunk.css",
-    "static/js/2.bad958dd.chunk.js",
+    "static/js/2.666374ea.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.85f42e83.chunk.js"
+    "static/js/main.a8f13743.chunk.js"
   ]
 }
