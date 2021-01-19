@@ -114,31 +114,37 @@ const Header = (props) => {
           <Nav className="mr-auto">
             <div className={classes.navItemContainer}>
               <NavItem className={classes.navItem}>
-                <NavLink
+                {/* <NavLink */}
+                <Link
                   className={classes.navLink}
                   //href="https://jenplaza.github.io/jennplaza/"
                   href="/portfolio/"
                 >
                   Home
-                </NavLink>
+                  {/*  </NavLink> */}
+                </Link>
               </NavItem>
               <NavItem className={classes.navItem}>
-                <NavLink
+                {/* <NavLink */}
+                <Link
                   className={classes.navLink}
                   //href="https://jenplaza.github.io/jennplaza-aboutme/"
                   //href="/jennplaza/about/"
                   href="/portfolio/aboutme/"
                 >
                   About
-                </NavLink>
+                  {/*  </NavLink> */}
+                </Link>
               </NavItem>
               <NavItem className={classes.navItem}>
-                <NavLink
+                {/* <NavLink */}
+                <Link
                   className={classes.navLink}
                   href="https://jenplaza.github.io/jennplaza-resume/"
                 >
                   Resume
-                </NavLink>
+                  {/*  </NavLink> */}
+                </Link>
               </NavItem>
             </div>
           </Nav>
