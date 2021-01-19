@@ -105,8 +105,10 @@ export default function ReadMore() {
   };
   return (
     <>
+      {/* PROJECT LIST */}
       {imageArray.map((data, i, tile) => (
         <button
+          key={i}
           className={classes.btn}
           onClick={() => {
             handleOpen();
@@ -118,6 +120,7 @@ export default function ReadMore() {
         >
           <img
             className={classes.images}
+            key={i}
             src={tile[i]}
             alt={'project home page'}
           />

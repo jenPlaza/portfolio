@@ -59,6 +59,15 @@ export const imageArray = [
   './images/PIF.jpg',
   './images/PRW.jpg',
 ];
+
+export const imageAlts = [
+  'homepage image of Faith Specialty Plates website',
+  'homepage image of Parks2Go website',
+  'homepage image of the BikeShop website',
+  'homepage image of WD3 form',
+  'homepage image of Pay It Forward',
+  'homepage image of Post It website',
+];
 export const titleArray = [
   'Featured Specialty Plates a Bootstrap application',
   'Parks 2 Go a React Application ',
