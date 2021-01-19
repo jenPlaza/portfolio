@@ -52,7 +52,7 @@ export default function Portfolio() {
   const classes = useStyles();
   return (
     <div className={classes.root}>
-      <Grid container id="portfolio" className={classes.container}>
+      <Grid container id="projects" className={classes.container}>
         <Jello duration={25000} forever>
           <Grid item xs={12}>
             <h1 className={classes.header}>Portfolio</h1>

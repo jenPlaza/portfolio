@@ -121,8 +121,9 @@ export default function About() {
             <Grid item xs={12} sm={8} md={8} lg={4}>
               <a
                 className={classes.button}
+                href="/portfolio/aboutme/"
                 //href="/jennplaza/about"
-                href="https://jenplaza.github.io/jennplaza-aboutme/"
+                //href="https://jenplaza.github.io/jennplaza-aboutme/"
                 value="About Me"
               >
                 <Rotate count={10} duration={10000}>

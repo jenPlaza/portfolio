@@ -99,7 +99,8 @@ const Header = (props) => {
       <Navbar color="transparent" dark expand="md" className={classes.navbar}>
         <NavbarBrand
           className={classes.navbarBrand}
-          href="https://jenplaza.github.io/jennplaza/"
+          //href="https://jenplaza.github.io/jennplaza/"
+          href="/portfolio/"
         >
           <Jello duration={25000} forever>
             <img className={classes.img} src={logo} alt="Logo" />
@@ -115,7 +116,8 @@ const Header = (props) => {
               <NavItem className={classes.navItem}>
                 <NavLink
                   className={classes.navLink}
-                  href="https://jenplaza.github.io/jennplaza/"
+                  //href="https://jenplaza.github.io/jennplaza/"
+                  href="/portfolio/"
                 >
                   Home
                 </NavLink>
@@ -123,8 +125,9 @@ const Header = (props) => {
               <NavItem className={classes.navItem}>
                 <NavLink
                   className={classes.navLink}
-                  href="https://jenplaza.github.io/jennplaza-aboutme/"
+                  //href="https://jenplaza.github.io/jennplaza-aboutme/"
                   //href="/jennplaza/about/"
+                  href="/portfolio/aboutme/"
                 >
                   About
                 </NavLink>

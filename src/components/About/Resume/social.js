@@ -7,115 +7,115 @@ import PhoneIcon from '@material-ui/icons/Phone';
 import HomeIcon from '@material-ui/icons/Home';
 
 //style
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   root: {
     color: '#00d1be',
     margin: '0%',
     textAlign: 'left',
     fontSize: '1.50em',
     [theme.breakpoints.up('xs')]: {
-      margin: '-5% 0% 1% -3%'
+      margin: '-5% 0% 1% -3%',
     },
     [theme.breakpoints.up('sm')]: {
-      margin: '-35% 0% 1% -3%'
+      margin: '-35% 0% 1% -3%',
     },
     [theme.breakpoints.up('md')]: {
-      margin: '-50% 0% 1% -3%'
+      margin: '-50% 0% 1% -3%',
     },
     [theme.breakpoints.up('lg')]: {
-      margin: '-3% 0% 1% 0%'
+      margin: '-3% 0% 1% 0%',
     },
     [theme.breakpoints.up('xl')]: {
-      margin: '-13% 0% 1% 0%'
-    }
+      margin: '-13% 0% 1% 0%',
+    },
   },
   h3: {
     fontSize: '1.8em',
     color: '#5CFFF1',
     margin: '0% 0% 3% 0%',
     [theme.breakpoints.up('sm')]: {
-      margin: '-7% 0% 0% 0%'
+      margin: '-7% 0% 0% 0%',
     },
     [theme.breakpoints.up('lg')]: {
-      margin: '0% 0% 11% 0%'
+      margin: '0% 0% 11% 0%',
     },
     [theme.breakpoints.up('xl')]: {
-      margin: '3% 0% 11% 0%'
-    }
+      margin: '3% 0% 11% 0%',
+    },
   },
   resume: {
     fontSize: '2.8em',
     margin: '-5% 0% 5% 0%',
     [theme.breakpoints.up('sm')]: {
       margin: '4% 0% 0% 0%',
-      fontSize: '2.5em'
+      fontSize: '2.5em',
     },
     [theme.breakpoints.up('md')]: {
       margin: '10% 0% 0% 0%',
-      fontSize: '2.5em'
+      fontSize: '2.5em',
     },
     [theme.breakpoints.up('lg')]: {
       margin: '20% 0% -2% 0%',
-      width: '120%'
+      width: '120%',
     },
     [theme.breakpoints.up('xl')]: {
-      margin: '3% 0% 11% 0%'
-    }
+      margin: '3% 0% 11% 0%',
+    },
   },
   portfolio: {
     fontSize: '1.9em',
     margin: '0% 0% 3% 0%',
     [theme.breakpoints.up('sm')]: {
-      margin: '4% 0% 0% 0%'
+      margin: '4% 0% 0% 0%',
     },
     [theme.breakpoints.up('lg')]: {
       margin: '20% 0% -2% 0%',
-      width: '120%'
+      width: '120%',
     },
     [theme.breakpoints.up('xl')]: {
-      margin: '3% 0% 11% 0%'
-    }
+      margin: '3% 0% 11% 0%',
+    },
   },
   info: {
     [theme.breakpoints.up('sm')]: {
-      margin: '-1% 0% 1% 0%'
-    }
+      margin: '-1% 0% 1% 0%',
+    },
   },
   socialContainer: {
     margin: '10% 0% 1% 0%',
     [theme.breakpoints.up('lg')]: {
-      margin: '3% 0% 1% 0%'
+      margin: '3% 0% 1% 0%',
     },
     [theme.breakpoints.up('xl')]: {
-      margin: '7% 0% 1% 0%'
-    }
+      margin: '7% 0% 1% 0%',
+    },
   },
   languages: {
     margin: '10% 0% 1% 0%',
     [theme.breakpoints.up('xs')]: {
-      margin: '15% 0% 15% 0%'
+      margin: '15% 0% 15% 0%',
     },
     [theme.breakpoints.up('sm')]: {
-      margin: '11% 0% 1% 0%'
+      margin: '11% 0% 1% 0%',
     },
     [theme.breakpoints.up('lg')]: {
-      margin: '5% 0% 1% 0%'
+      margin: '5% 0% 1% 0%',
     },
     [theme.breakpoints.up('xl')]: {
-      margin: '12% 0% 1% 0%'
-    }
+      margin: '12% 0% 1% 0%',
+    },
   },
   socialMedia: {
     margin: '8% 0% 1% 5%',
     paddingRight: '1%',
     transform: 'scale(1.3)',
     [theme.breakpoints.up('sm')]: {
-      margin: '3% 0% 1% 0%'
+      margin: '3% 0% 1% 0%',
     },
     [theme.breakpoints.up('md')]: {
-      margin: '3% 0% 1% 0%'
-    }
-  }
+      margin: '3% 0% 1% 0%',
+    },
+  },
 }));
 
 //exporting a class footer
@@ -235,9 +235,10 @@ export default function About() {
           <h3 className={classes.portfolio}>
             <a
               style={{ color: '#e2b575' }}
-              href="https://jenplaza.github.io/jennplaza/#portfolio"
+              //href="https://jenplaza.github.io/jennplaza/#portfolio"
+              href="/portfolio/#projects"
             >
-              Back To My Portfolio >>
+              Back To My Portfolio
             </a>
           </h3>
         </Grid>

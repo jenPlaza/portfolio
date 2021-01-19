@@ -1,25 +1,81 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
-function App() {
+//pages & components
+import Home from './pages/index';
+import About from './pages/about';
+import Footer from './components/Footer/footer';
+import Header from './components/Header/header';
+
+//Material UI
+import { makeStyles, Grid } from '@material-ui/core';
+
+//style
+const useStyles = makeStyles((theme) => ({
+  root: {
+    maxWidth: '2000px',
+    height: 'auto',
+    margin: 'auto',
+    flexGrow: 1,
+    overflow: 'hidden',
+    border: '1px solid #f5f5f',
+  },
+  recommendationsRow: {
+    padding: '4% 5% 1% 5%',
+    //backgroundColor: '#A6A36C',
+    backgroundColor: '#333333',
+    color: 'white',
+    fontSize: '2em',
+  },
+  footerRow: {
+    padding: '2% 5% 1% 5%',
+    color: '#00d1be',
+    backgroundColor: '#0A0300',
+  },
+}));
+
+export default function App() {
+  const classes = useStyles();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className={classes.root}>
+        {/*  <nav>
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/about">About</Link>
+            </li>
+          </ul>
+        </nav> */}
+        <Grid container spacing={0}>
+          <Grid item xs={12}>
+            <Header />
+          </Grid>
+          <Grid item xs={12}>
+            <Switch>
+              <Route
+                exact
+                path={process.env.PUBLIC_URL + '/'}
+                component={Home}
+              />
+              <Route
+                exact
+                path={process.env.PUBLIC_URL + '/about'}
+                component={About}
+              />
+            </Switch>
+          </Grid>
+        </Grid>
+        {/*  <Grid item xs={12} className={classes.recommendationsRow}>
+          <Recomendations />
+        </Grid> */}
+
+        <Grid item xs={12} className={classes.footerRow}>
+          <Footer />
+        </Grid>
+      </div>
+    </Router>
   );
 }
-
-export default App;
