@@ -15,7 +15,7 @@ export default function App() {
               <Link to="/portfolio/">Home</Link>
             </li>
             <li>
-              <Link to="/portfolio/about">About</Link>
+              <Link to="/portfolio/aboutme">About</Link>
             </li>
           </ul>
         </nav>
@@ -23,7 +23,7 @@ export default function App() {
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
-          <Route path="/about">
+          <Route path="/aboutme">
             <About />
           </Route>
           <Route exact path="/">
