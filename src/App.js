@@ -1,45 +1,15 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
-//pages & components
+//pages
 import Home from './pages/index';
 import About from './pages/about';
-import Footer from './components/Footer/footer';
-import Header from './components/Header/header';
-
-//Material UI
-import { makeStyles, Grid } from '@material-ui/core';
-
-//style
-const useStyles = makeStyles((theme) => ({
-  root: {
-    maxWidth: '2000px',
-    height: 'auto',
-    margin: 'auto',
-    flexGrow: 1,
-    overflow: 'hidden',
-    border: '1px solid #f5f5f',
-  },
-  recommendationsRow: {
-    padding: '4% 5% 1% 5%',
-    //backgroundColor: '#A6A36C',
-    backgroundColor: '#333333',
-    color: 'white',
-    fontSize: '2em',
-  },
-  footerRow: {
-    padding: '2% 5% 1% 5%',
-    color: '#00d1be',
-    backgroundColor: '#0A0300',
-  },
-}));
 
 export default function App() {
-  const classes = useStyles();
   return (
     <Router>
-      <div className={classes.root}>
-        {/*  <nav>
+      <div>
+        <nav>
           <ul>
             <li>
               <Link to="/">Home</Link>
@@ -48,30 +18,32 @@ export default function App() {
               <Link to="/about">About</Link>
             </li>
           </ul>
-        </nav> */}
-        <Grid container spacing={0}>
-          <Grid item xs={12}>
-            <Header />
-          </Grid>
-          <Grid item xs={12}>
-            <Switch>
-              <Route exact path={process.env.PUBLIC_URL + '/'}>
-                <Home />
-              </Route>
-              <Route path={process.env.PUBLIC_URL + '/aboutme'}>
-                <About />
-              </Route>
-            </Switch>
-          </Grid>
-        </Grid>
-        {/*  <Grid item xs={12} className={classes.recommendationsRow}>
-          <Recomendations />
-        </Grid> */}
+        </nav>
 
-        <Grid item xs={12} className={classes.footerRow}>
-          <Footer />
-        </Grid>
+        {/* A <Switch> looks through its children <Route>s and
+            renders the first one that matches the current URL. */}
+        <Switch>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route exact path="/">
+            <Home />
+          </Route>
+        </Switch>
       </div>
     </Router>
   );
 }
+
+/* function Home() {
+  return <h2>Home</h2>;
+}
+
+function About() {
+  return <h2>About</h2>;
+}
+
+function Users() {
+  return <h2>Users</h2>;
+}
+ */
