@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
     color: '#00d1be',
     fontFamily: 'lato',
     width: '90%',
-    marginTop: '20%',
+    marginTop: '5%',
     margin: 'auto',
     fontSize: '1em',
     [theme.breakpoints.up('sm')]: {
@@ -35,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   h1: {
-    fontSize: '2.5em',
+    fontSize: '1.5em',
     color: 'white',
     fontFamily: 'grandstander',
     marginBottom: '3%',
@@ -45,7 +45,7 @@ const useStyles = makeStyles((theme) => ({
   },
   about: {
     //border: '1px solid orange',
-    fontSize: '2.2em',
+    fontSize: '1.25em',
     color: '#e2b575',
     //color: 'turquoise',
     marginTop: '15%',

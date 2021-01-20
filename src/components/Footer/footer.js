@@ -1,12 +1,13 @@
 // JavaScript Document
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Pulse from 'react-reveal/Pulse';
 
 //images
 import logoButton from '../../images/logo_JPbtn.png';
 
 //Material UI
-import { makeStyles, Grid, Link } from '@material-ui/core';
+import { makeStyles, Grid } from '@material-ui/core';
 import GitHub from '@material-ui/icons/GitHub';
 import LinkedIn from '@material-ui/icons/LinkedIn';
 import Youtube from '@material-ui/icons/YouTube';
@@ -19,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     flexWrap: 'wrap',
     //border: '1px solid pink',
-    fontSize: '2.5em',
+    fontSize: '1.5em',
   },
   logob: {
     width: '65%',
@@ -43,10 +44,10 @@ const useStyles = makeStyles((theme) => ({
     fontSize: '0.6em',
     //border: '1px solid aqua',
     marginTop: '3%%',
-    [theme.breakpoints.up('sm')]: {
+    /* [theme.breakpoints.up('sm')]: {
       fontSize: '1em',
       margin: '0%',
-    },
+    }, */
     [theme.breakpoints.up('md')]: {
       margin: '0% 0% 0% -9%',
       fontSize: '0.75em',
@@ -71,7 +72,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   icons: {
-    transform: 'scale(2)',
+    transform: 'scale(1)',
   },
   socialContainer: {
     marginTop: '2%',
@@ -84,11 +85,11 @@ const useStyles = makeStyles((theme) => ({
   },
   socialMedia: {
     display: 'inline-block',
-    transform: 'scale(3)',
-    margin: '10% 3% 5% 15%',
+    transform: 'scale(1.5)',
+    margin: '3% 3% 15% 15%',
     color: 'white',
     [theme.breakpoints.up('sm')]: {
-      transform: 'scale(3.5)',
+      marginTop: '5%',
     },
     [theme.breakpoints.up('md')]: {
       transform: 'scale(3)',
@@ -126,13 +127,7 @@ export default function Footer() {
         {/*  ABOUT */}
         <Grid item xs={12} md={9} className={classes.about}>
           <p>
-            <Link
-              className={classes.a}
-              /* href="https://jenplaza.github.io/jennplaza-aboutme/"
-               */
-              //href="/jennplaza/about/"
-              href="/portfolio/aboutme/"
-            >
+            <Link className={classes.a} to="/portfolio/aboutme/">
               Jenn Plaza's
             </Link>
             devotion to see products or services come to life is what drives her
@@ -140,18 +135,18 @@ export default function Footer() {
             she is....
           </p>
           <Grid container spacing={3} className={classes.iconsContainer}>
-            <Grid item xs={1}>
+            <Grid item xs={2}>
               <PhoneIcon className={classes.icons} />
             </Grid>
-            <Grid item xs={11}>
+            <Grid item xs={9}>
               <p>(407) 535.0537</p>
             </Grid>
           </Grid>
           <Grid container spacing={3} className={classes.iconsContainer}>
-            <Grid item xs={1}>
+            <Grid item xs={2}>
               <HomeIcon className={classes.icons} />
             </Grid>
-            <Grid item xs={11}>
+            <Grid item xs={9}>
               <address>442 Harbor Point Blvd, Orlando Fl. 32835</address>
             </Grid>
           </Grid>

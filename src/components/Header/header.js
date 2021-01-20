@@ -18,11 +18,11 @@ const useStyles = makeStyles((theme) => ({
   img: {
     //border: '1px solid red',
     float: 'left',
-    margin: '0% 0% 5% -8%',
-    width: '68%',
+    margin: '0% 0% 5% 0%',
+    width: '75%',
     [theme.breakpoints.up('sm')]: {
-      margin: '0% 0% 0% -5%',
-      width: '100%',
+      margin: '0% 0% 0% 0%',
+      width: '50%',
     },
     [theme.breakpoints.up('md')]: {
       margin: '-13% 0% 0% 0%',
@@ -38,10 +38,10 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   navbar: {
-    border: '1px solid pink',
-    height: '100px',
-    marginTop: '12%',
-    width: '98%',
+    //border: '1px solid pink',
+    height: '75px',
+    marginTop: '10%',
+    width: '95%',
     margin: 'auto',
     [theme.breakpoints.up('sm')]: {
       width: '90%',
@@ -55,13 +55,14 @@ const useStyles = makeStyles((theme) => ({
   },
   navItem: {
     color: '#00d1be !important',
-    fontSize: '2em !important',
-    margin: '30% 35% 0% -30%',
+    fontSize: '1em !important',
+    padding: '1%',
+    margin: '21% 4% 0% 0%',
     display: 'inline-block',
   },
   navItemContainer: {
     margin: '-22% 0% 0% -6%',
-    border: '1px solid green',
+    //border: '1px solid green',
     width: '450px',
     fontSize: '1.5em',
     [theme.breakpoints.up('sm')]: {
@@ -77,7 +78,7 @@ const useStyles = makeStyles((theme) => ({
   },
   navbarBrand: {
     width: '80%',
-    border: '1px solid aqua',
+    //border: '1px solid aqua',
     margin: '-10% 0% 0% -5%',
     [theme.breakpoints.up('sm')]: {
       width: '100%',
@@ -99,18 +100,10 @@ const Header = (props) => {
       <Navbar color="transparent" dark expand="md" className={classes.navbar}>
         <NavbarBrand className={classes.navbarBrand} href="/portfolio/">
           <Jello duration={25000} forever>
-            <img
-              className="w-75"
-              //className={classes.img}
-              src={logo}
-              alt="Logo"
-            />
+            <img className={classes.img} src={logo} alt="Logo" />
           </Jello>
         </NavbarBrand>
-        <NavbarToggler
-          className="navbar-toggler ml-auto mr-5"
-          onClick={toggle}
-        />
+        <NavbarToggler className="navbar-toggler ml-auto" onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto">
             <div className={classes.navItemContainer}>

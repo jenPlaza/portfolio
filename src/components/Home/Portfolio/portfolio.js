@@ -12,9 +12,9 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
     flexWrap: 'wrap',
     width: '100%',
-    marginTop: '28%',
+    marginTop: '30%',
     [theme.breakpoints.up('sm')]: {
-      marginTop: '10%',
+      marginTop: '18%',
     },
     [theme.breakpoints.up('md')]: {
       marginTop: '10%',
@@ -31,12 +31,12 @@ const useStyles = makeStyles((theme) => ({
   },
   header: {
     fontFamily: 'Zapfino',
-    fontSize: '3em',
+    fontSize: '1.8em',
     position: 'absolute',
     zIndex: '1',
     color: '#0A0300',
     [theme.breakpoints.up('sm')]: {
-      fontSize: '4em',
+      fontSize: '2.3em',
     },
     [theme.breakpoints.up('md')]: {
       paddingLeft: '7%',
