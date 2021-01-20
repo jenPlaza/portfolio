@@ -97,13 +97,14 @@ const Header = (props) => {
   return (
     <div>
       <Navbar color="transparent" dark expand="md" className={classes.navbar}>
-        <NavbarBrand
-          className={classes.navbarBrand}
-          //href="https://jenplaza.github.io/jennplaza/"
-          href="/portfolio/"
-        >
+        <NavbarBrand className={classes.navbarBrand} href="/portfolio/">
           <Jello duration={25000} forever>
-            <img className={classes.img} src={logo} alt="Logo" />
+            <img
+              className="w-75"
+              //className={classes.img}
+              src={logo}
+              alt="Logo"
+            />
           </Jello>
         </NavbarBrand>
         <NavbarToggler
@@ -115,33 +116,19 @@ const Header = (props) => {
             <div className={classes.navItemContainer}>
               {/* HOME */}
               <NavItem className={classes.navItem}>
-                <Link
-                  className={classes.navLink}
-                  //href="https://jenplaza.github.io/jennplaza/"
-                  href="/portfolio/"
-                >
+                <Link className={classes.navLink} to="/portfolio/">
                   Home
                 </Link>
               </NavItem>
               {/* ABOUT */}
               <NavItem className={classes.navItem}>
-                <Link
-                  className={classes.navLink}
-                  //href="https://jenplaza.github.io/jennplaza-aboutme/"
-                  //href="/jennplaza/about/"
-                  href="/portfolio/aboutme/"
-                >
+                <Link className={classes.navLink} to="/portfolio/aboutme">
                   About
                 </Link>
               </NavItem>
               {/* BLOG */}
               <NavItem className={classes.navItem}>
-                <Link
-                  className={classes.navLink}
-                  //href="https://jenplaza.github.io/jennplaza-aboutme/"
-                  //href="/jennplaza/about/"
-                  href="/portfolio/blog/"
-                >
+                <Link className={classes.navLink} to="/portfolio/blog/">
                   Blog
                 </Link>
               </NavItem>

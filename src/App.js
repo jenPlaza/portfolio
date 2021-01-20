@@ -42,33 +42,9 @@ export default function App() {
       <div className={classes.root}>
         <Grid container spacing={0}>
           <Grid item xs={12}>
-            {/* <nav>
-          <ul>
-            <li>
-              <Link to="/portfolio/">Home</Link>
-            </li>
-            <li>
-              <Link to="/portfolio/aboutme">About</Link>
-            </li>
-            <li>
-              <Link to="/portfolio/blog">Blog</Link>
-            </li>
-          </ul>
-        </nav> */}
-
             <Header />
           </Grid>
           <Grid item xs={12}>
-            {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
-            {/* <Switch>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route exact path="/">
-            <Home />
-          </Route>
-        </Switch> */}
             <Switch>
               <Route
                 exact
@@ -99,16 +75,3 @@ export default function App() {
     </Router>
   );
 }
-
-/* function Home() {
-  return <h2>Home</h2>;
-}
-
-function About() {
-  return <h2>About</h2>;
-}
-
-function Blog() {
-  return <h2>Blog</h2>;
-}
- */

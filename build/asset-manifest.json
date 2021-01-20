@@ -1,22 +1,30 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/portfolio/static/js/main.822b5139.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.822b5139.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.cf469a33.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.cf469a33.js.map",
-    "static/js/2.78c47803.chunk.js": "/portfolio/static/js/2.78c47803.chunk.js",
-    "static/js/2.78c47803.chunk.js.map": "/portfolio/static/js/2.78c47803.chunk.js.map",
-    "static/js/3.dbfddeac.chunk.js": "/portfolio/static/js/3.dbfddeac.chunk.js",
-    "static/js/3.dbfddeac.chunk.js.map": "/portfolio/static/js/3.dbfddeac.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.cd00d5d6.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.cd00d5d6.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.0627fe81.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.0627fe81.js.map",
+    "static/css/2.29c2f1c0.chunk.css": "/portfolio/static/css/2.29c2f1c0.chunk.css",
+    "static/js/2.d23b51d0.chunk.js": "/portfolio/static/js/2.d23b51d0.chunk.js",
+    "static/js/2.d23b51d0.chunk.js.map": "/portfolio/static/js/2.d23b51d0.chunk.js.map",
+    "static/js/3.ba43cfc0.chunk.js": "/portfolio/static/js/3.ba43cfc0.chunk.js",
+    "static/js/3.ba43cfc0.chunk.js.map": "/portfolio/static/js/3.ba43cfc0.chunk.js.map",
     "index.html": "/portfolio/index.html",
+    "static/css/2.29c2f1c0.chunk.css.map": "/portfolio/static/css/2.29c2f1c0.chunk.css.map",
     "static/css/main.6dea0f05.chunk.css.map": "/portfolio/static/css/main.6dea0f05.chunk.css.map",
-    "static/js/2.78c47803.chunk.js.LICENSE.txt": "/portfolio/static/js/2.78c47803.chunk.js.LICENSE.txt"
+    "static/js/2.d23b51d0.chunk.js.LICENSE.txt": "/portfolio/static/js/2.d23b51d0.chunk.js.LICENSE.txt",
+    "static/media/bkgd_About.478babeb.jpg": "/portfolio/static/media/bkgd_About.478babeb.jpg",
+    "static/media/logo_JPbtn.d62b9573.png": "/portfolio/static/media/logo_JPbtn.d62b9573.png",
+    "static/media/logo_jenPlaza.d8b810f3.png": "/portfolio/static/media/logo_jenPlaza.d8b810f3.png",
+    "static/media/modalBkgd.9bba4f3e.png": "/portfolio/static/media/modalBkgd.9bba4f3e.png",
+    "static/media/unite.ad5f5576.jpg": "/portfolio/static/media/unite.ad5f5576.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.cf469a33.js",
-    "static/js/2.78c47803.chunk.js",
+    "static/js/runtime-main.0627fe81.js",
+    "static/css/2.29c2f1c0.chunk.css",
+    "static/js/2.d23b51d0.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.822b5139.chunk.js"
+    "static/js/main.cd00d5d6.chunk.js"
   ]
 }
