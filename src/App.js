@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 //pages
 import Home from './pages/home';
 import About from './pages/about';
-import Users from './pages/users';
+import Blog from './pages/blog';
 
 export default function App() {
   return (
@@ -17,6 +17,9 @@ export default function App() {
             </li>
             <li>
               <Link to="/portfolio/aboutme">About</Link>
+            </li>
+            <li>
+              <Link to="/portfolio/blog">Blog</Link>
             </li>
           </ul>
         </nav>
@@ -37,6 +40,11 @@ export default function App() {
             exact
             path={process.env.PUBLIC_URL + '/aboutme'}
             component={About}
+          />
+          <Route
+            exact
+            path={process.env.PUBLIC_URL + '/blog'}
+            component={Blog}
           />
         </Switch>
       </div>
