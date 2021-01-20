@@ -61,6 +61,7 @@ export default function App() {
                 path={process.env.PUBLIC_URL + '/blog'}
                 component={Blog}
               />
+              <Route exact path={process.env.PUBLIC_URL + '/resume'} />
             </Switch>
           </Grid>
         </Grid>

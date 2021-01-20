@@ -1,4 +1,3 @@
-//recommendations example
 export const recommendations = [
   {
     id: '1',
