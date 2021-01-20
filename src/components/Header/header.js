@@ -136,7 +136,7 @@ const Header = (props) => {
               <NavItem className={classes.navItem}>
                 <Link
                   className={classes.navLink}
-                  href="https://jenplaza.github.io/jennplaza-resume/"
+                  to="https://jenplaza.github.io/jennplaza-resume/"
                 >
                   Resume
                 </Link>
