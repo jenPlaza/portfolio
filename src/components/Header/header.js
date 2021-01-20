@@ -134,12 +134,12 @@ const Header = (props) => {
               </NavItem>
               {/* RESUME */}
               <NavItem className={classes.navItem}>
-                <Link
+                <a
                   className={classes.navLink}
-                  to="https://jenplaza.github.io/jennplaza-resume/"
+                  href="https://jenplaza.github.io/jennplaza-resume/"
                 >
                   Resume
-                </Link>
+                </a>
               </NavItem>
             </div>
           </Nav>
