@@ -38,10 +38,10 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   navbar: {
-    //border: '1px solid pink',
+    border: '1px solid pink',
     height: '100px',
     marginTop: '12%',
-    width: '90%',
+    width: '98%',
     margin: 'auto',
     [theme.breakpoints.up('sm')]: {
       width: '90%',
@@ -61,7 +61,7 @@ const useStyles = makeStyles((theme) => ({
   },
   navItemContainer: {
     margin: '-22% 0% 0% -6%',
-    //border: '1px solid green',
+    border: '1px solid green',
     width: '450px',
     fontSize: '1.5em',
     [theme.breakpoints.up('sm')]: {
@@ -77,7 +77,7 @@ const useStyles = makeStyles((theme) => ({
   },
   navbarBrand: {
     width: '80%',
-    //border: '1px solid aqua',
+    border: '1px solid aqua',
     margin: '-10% 0% 0% -5%',
     [theme.breakpoints.up('sm')]: {
       width: '100%',
@@ -134,12 +134,6 @@ const Header = (props) => {
               </NavItem>
               {/* RESUME */}
               <NavItem className={classes.navItem}>
-                {/* <Link
-                  className={classes.navLink}
-                  to="https://jenplaza.github.io/jennplaza-resume/"
-                >
-                  Resume
-                </Link> */}
                 <a className={classes.navLink} href="resume_2020.pdf" download>
                   Resume
                 </a>
