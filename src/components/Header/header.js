@@ -127,7 +127,7 @@ const Header = (props) => {
               </NavItem>
               {/* RESUME */}
               <NavItem className={classes.navItem}>
-                <a className={classes.navLink} href="resume_2020.pdf" download>
+                <a className={classes.navLink} href="resume_2021.pdf" download>
                   Resume
                 </a>
               </NavItem>

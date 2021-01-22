@@ -1,7 +1,6 @@
 // JavaScript Document
 import React from 'react';
 import ReadMore from './readMore';
-import Jello from 'react-reveal/Jello';
 
 //material UI
 import { makeStyles, Grid } from '@material-ui/core';
@@ -53,11 +52,9 @@ export default function Portfolio() {
   return (
     <div className={classes.root}>
       <Grid container id="projects" className={classes.container}>
-        <Jello duration={25000} forever>
-          <Grid item xs={12}>
-            <h1 className={classes.header}>Portfolio</h1>
-          </Grid>
-        </Jello>
+        <Grid item xs={12}>
+          <h1 className={classes.header}>Portfolio</h1>
+        </Grid>
         <ReadMore />
       </Grid>
     </div>
