@@ -14,6 +14,13 @@ import logo from '../../images/logo_jenPlaza.png';
 
 import { makeStyles } from '@material-ui/core';
 
+/* platform sizes
+xs = 375 px,
+  sm = 768 px,
+  md = 992 px,
+  lg = 1500 px,
+  xl = 2000 px, */
+
 const useStyles = makeStyles((theme) => ({
   img: {
     //border: '1px solid red',
@@ -30,7 +37,7 @@ const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.up('lg')]: {
       margin: '-5% 0% 0% 0%',
-      width: '40%',
+      width: '30%',
     },
     [theme.breakpoints.up('xl')]: {
       margin: '5% 0% 0% 5%',
@@ -49,9 +56,12 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up('md')]: {
       marginTop: '15%',
     },
+    [theme.breakpoints.up('lg')]: {
+      marginTop: '10%',
+    },
     [theme.breakpoints.up('xl')]: {
       //margin: '7.5% 0% 0% 5%',
-      margin: '5% 0% 0% 5%',
+      margin: '6.5% 0% 0% 5%',
     },
   },
   navItem: {
@@ -61,7 +71,13 @@ const useStyles = makeStyles((theme) => ({
     margin: '19% 4% 0% 0%',
     display: 'inline-block',
     [theme.breakpoints.up('sm')]: {
-      marginTop: '34%',
+      marginTop: '0%',
+    },
+    [theme.breakpoints.up('md')]: {
+      marginTop: '35%',
+    },
+    [theme.breakpoints.up('lg')]: {
+      marginTop: '16%',
     },
   },
   navItemContainer: {

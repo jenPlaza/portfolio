@@ -17,13 +17,13 @@ const useStyles = makeStyles((theme) => ({
     margin: 'auto',
     fontSize: '1em',
     [theme.breakpoints.up('sm')]: {
-      marginTop: '6%',
+      marginTop: '-8%',
     },
     [theme.breakpoints.up('md')]: {
-      marginTop: '5%',
+      marginTop: '0%',
     },
     [theme.breakpoints.up('lg')]: {
-      marginTop: '5%',
+      marginTop: '0%',
     },
     [theme.breakpoints.up('xl')]: {
       marginTop: '8%',
@@ -79,9 +79,11 @@ const useStyles = makeStyles((theme) => ({
       height: '175px',
       width: '175px',
       marginTop: '2%',
+      fontSize: '0.75em',
     },
     [theme.breakpoints.up('xl')]: {
       marginTop: '0%',
+      fontSize: '0.75em',
     },
     '&:hover': {
       background: 'transparent',
