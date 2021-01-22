@@ -33,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
       width: '40%',
     },
     [theme.breakpoints.up('xl')]: {
-      margin: '-1% 0% 0% 5%',
+      margin: '5% 0% 0% 5%',
       width: '25%',
     },
   },
@@ -50,7 +50,8 @@ const useStyles = makeStyles((theme) => ({
       marginTop: '15%',
     },
     [theme.breakpoints.up('xl')]: {
-      margin: '7.5% 0% 0% 5%',
+      //margin: '7.5% 0% 0% 5%',
+      margin: '5% 0% 0% 5%',
     },
   },
   navItem: {
