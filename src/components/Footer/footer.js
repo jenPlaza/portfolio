@@ -25,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
   logob: {
     width: '65%',
     [theme.breakpoints.up('sm')]: {
-      width: '55%',
+      width: '45%',
     },
     [theme.breakpoints.up('md')]: {
       width: '30%',
@@ -44,17 +44,16 @@ const useStyles = makeStyles((theme) => ({
     fontSize: '0.6em',
     //border: '1px solid aqua',
     marginTop: '3%%',
-    /* [theme.breakpoints.up('sm')]: {
-      fontSize: '1em',
-      margin: '0%',
-    }, */
+    [theme.breakpoints.up('sm')]: {
+      fontSize: '0.75em',
+    },
     [theme.breakpoints.up('md')]: {
       margin: '0% 0% 0% -9%',
       fontSize: '0.75em',
     },
     [theme.breakpoints.up('lg')]: {
       margin: '0% 0% 0% -9%',
-      fontSize: '0.6em',
+      fontSize: '1em',
     },
   },
   a: {
@@ -72,12 +71,15 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   icons: {
-    transform: 'scale(1)',
+    transform: 'scale(1.2)',
+    [theme.breakpoints.up('sm')]: {
+      transform: 'scale(1.6)',
+    },
   },
   socialContainer: {
     marginTop: '2%',
     [theme.breakpoints.up('md')]: {
-      margin: '-1% 0% 0% 4%',
+      margin: '-4% 0% 0% 4%',
     },
     [theme.breakpoints.up('lg')]: {
       marginTop: '-3%',
@@ -92,14 +94,13 @@ const useStyles = makeStyles((theme) => ({
       marginTop: '5%',
     },
     [theme.breakpoints.up('md')]: {
-      transform: 'scale(3)',
+      transform: 'scale(1.7)',
       display: 'block',
       marginTop: '100%',
     },
     [theme.breakpoints.up('lg')]: {
       display: 'block',
       marginTop: '65%',
-      transform: 'scale(2.2)',
     },
     [theme.breakpoints.up('xl')]: {
       display: 'block',
@@ -134,7 +135,7 @@ export default function Footer() {
             dedication to each project she begins. With joyfulness and optimism,
             she is....
           </p>
-          <Grid container spacing={3} className={classes.iconsContainer}>
+          <Grid container spacing={5} className={classes.iconsContainer}>
             <Grid item xs={2}>
               <PhoneIcon className={classes.icons} />
             </Grid>

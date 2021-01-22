@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
     width: '75%',
     [theme.breakpoints.up('sm')]: {
       margin: '0% 0% 0% 0%',
-      width: '50%',
+      width: '100%',
     },
     [theme.breakpoints.up('md')]: {
       margin: '-13% 0% 0% 0%',
@@ -47,7 +47,7 @@ const useStyles = makeStyles((theme) => ({
       width: '90%',
     },
     [theme.breakpoints.up('md')]: {
-      marginTop: '10%',
+      marginTop: '15%',
     },
     [theme.breakpoints.up('xl')]: {
       margin: '7.5% 0% 0% 5%',
@@ -57,11 +57,14 @@ const useStyles = makeStyles((theme) => ({
     color: '#00d1be !important',
     fontSize: '1em !important',
     padding: '1%',
-    margin: '21% 4% 0% 0%',
+    margin: '19% 4% 0% 0%',
     display: 'inline-block',
+    [theme.breakpoints.up('sm')]: {
+      marginTop: '34%',
+    },
   },
   navItemContainer: {
-    margin: '-22% 0% 0% -6%',
+    margin: '-22% 0% 0% 0%',
     //border: '1px solid green',
     width: '450px',
     fontSize: '1.5em',

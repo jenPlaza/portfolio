@@ -12,18 +12,28 @@ import Grid from '@material-ui/core/Grid';
 //style
 const useStyles = makeStyles((theme) => ({
   root: {
-    textAlign: 'left',
+    /*   textAlign: 'left',
+    border: '1px solid blue', */
   },
   aboutMeRow: {
     padding: '1%',
     marginTop: '30%',
     marginBottom: '10%',
+    [theme.breakpoints.up('xl')]: {
+      marginTop: '25%',
+    },
   },
   portfolioRow: {
     backgroundColor: 'white',
     marginTop: '8%',
     [theme.breakpoints.up('sm')]: {
       marginTop: '8%',
+    },
+    [theme.breakpoints.up('lg')]: {
+      marginTop: '-2%',
+    },
+    [theme.breakpoints.up('xl')]: {
+      marginTop: '2%',
     },
   },
 }));

@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
       marginTop: '5%',
     },
     [theme.breakpoints.up('lg')]: {
-      marginTop: '8%',
+      marginTop: '5%',
     },
     [theme.breakpoints.up('xl')]: {
       marginTop: '8%',
@@ -80,12 +80,22 @@ const useStyles = makeStyles((theme) => ({
       width: '175px',
       marginTop: '2%',
     },
+    [theme.breakpoints.up('xl')]: {
+      marginTop: '0%',
+    },
     '&:hover': {
       background: 'transparent',
       transform: 'rotate(360deg) scale(1)',
       border: '3px solid turquoise',
       color: '#e2b575',
       textDecoration: 'none',
+      [theme.breakpoints.up('md')]: {
+        color: '#0A0300',
+      },
+      [theme.breakpoints.up('lg')]: {
+        color: '#e2b575',
+        fontSize: '0.7em',
+      },
     },
   },
   btnText: {
@@ -93,10 +103,10 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 'bold',
     fontSize: '1.2em',
     [theme.breakpoints.up('md')]: {
-      fontSize: '0.8em',
+      fontSize: '0.7em',
     },
     [theme.breakpoints.up('lg')]: {
-      fontSize: '1.2em',
+      fontSize: '1.1em',
     },
   },
 }));

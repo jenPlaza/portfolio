@@ -14,15 +14,34 @@ import { makeStyles, Modal, Grid } from '@material-ui/core';
 import imgUrl from '../../../images/modalBkgd.png';
 
 const useStyles = makeStyles((theme) => ({
+  container: {
+    //border: '1px solid red',
+    marginTop: '5%',
+    textAlign: 'center',
+    [theme.breakpoints.up('sm')]: {
+      marginTop: '4%',
+    },
+    [theme.breakpoints.up(' lg')]: {
+      marginTop: '10%',
+    },
+    [theme.breakpoints.up(' xl')]: {
+      marginTop: '15%',
+    },
+  },
   btn: {
     border: 'none',
-    marginTop: '10%',
+    padding: '5% 0% 3% 0%',
+    backgroundColor: 'white',
     [theme.breakpoints.up('md')]: {
-      marginTop: '7%',
+      padding: '0% 0% 3% 0%',
     },
     [theme.breakpoints.up('lg')]: {
-      marginTop: '5%',
+      marginTop: '3%',
+      padding: '0% 0% 0% 0%',
     },
+    /* [theme.breakpoints.up('xl')]: {
+      marginTop: '6%',
+    }, */
   },
   openModalBtn: {
     color: 'turquoise',
@@ -61,6 +80,10 @@ const useStyles = makeStyles((theme) => ({
   },
   images: {
     width: '100%',
+    [theme.breakpoints.up('sm')]: {
+      width: '100%',
+      //paddingLeft: '13%',
+    },
   },
   h2: {
     padding: '2%',
@@ -105,70 +128,72 @@ export default function ReadMore() {
   };
   return (
     <>
-      {/* PROJECT LIST */}
-      {imageArray.map((data, i, tile) => (
-        <button
-          key={i}
-          className={classes.btn}
-          onClick={() => {
-            handleOpen();
-            setTitle(titleArray[i]);
-            setDescription(descriptionArray[i]);
-            setRepo(repoArray[i]);
-            setHref(hrefArray[i]);
-          }}
-        >
-          <img
-            className={classes.images}
+      <Grid className={classes.container}>
+        {/* PROJECT LIST */}
+        {imageArray.map((data, i, tile) => (
+          <button
             key={i}
-            src={tile[i]}
-            alt={'project home page'}
-          />
-        </button>
-      ))}
-      <Modal
-        id="modal"
-        className={classes.modal}
-        open={open}
-        onClose={handleClose}
-        aria-labelledby="ReadMore"
-      >
-        <form>
-          <Grid container>
-            <Grid item xs={12}>
-              {/* MODAL HEADER */}
-              <div className={classes.modalHeader}>
-                <h4 className={classes.h4}>Read More</h4>
-              </div>
-              {/* MODAL BODY */}
-              <div className={classes.modalBody}>
-                <h2>{title}</h2>
-                <br />
-                <br />
-                <h5>{description}</h5>
-                <br />
-                <br />
-                <h4>
-                  <a className={classes.links} href={href} target="_blank">
-                    Go To Site
-                  </a>
-                </h4>
-                <h5>
-                  <a className={classes.links} href={repo} target="_blank">
-                    Visit the repository
-                  </a>
-                </h5>
-              </div>
-              {/* MODAL FOOTER */}
-              <div className={classes.modalFooter}>
-                <button className={classes.btnCancel} onClick={handleClose}>
-                  Close
-                </button>
-              </div>
+            className={classes.btn}
+            onClick={() => {
+              handleOpen();
+              setTitle(titleArray[i]);
+              setDescription(descriptionArray[i]);
+              setRepo(repoArray[i]);
+              setHref(hrefArray[i]);
+            }}
+          >
+            <img
+              className={classes.images}
+              key={i}
+              src={tile[i]}
+              alt={'project home page'}
+            />
+          </button>
+        ))}
+        <Modal
+          id="modal"
+          className={classes.modal}
+          open={open}
+          onClose={handleClose}
+          aria-labelledby="ReadMore"
+        >
+          <form>
+            <Grid container>
+              <Grid item xs={12}>
+                {/* MODAL HEADER */}
+                <div className={classes.modalHeader}>
+                  <h4 className={classes.h4}>Read More</h4>
+                </div>
+                {/* MODAL BODY */}
+                <div className={classes.modalBody}>
+                  <h2>{title}</h2>
+                  <br />
+                  <br />
+                  <h5>{description}</h5>
+                  <br />
+                  <br />
+                  <h4>
+                    <a className={classes.links} href={href} target="_blank">
+                      Go To Site
+                    </a>
+                  </h4>
+                  <h5>
+                    <a className={classes.links} href={repo} target="_blank">
+                      Visit the repository
+                    </a>
+                  </h5>
+                </div>
+                {/* MODAL FOOTER */}
+                <div className={classes.modalFooter}>
+                  <button className={classes.btnCancel} onClick={handleClose}>
+                    Close
+                  </button>
+                </div>
+              </Grid>
             </Grid>
-          </Grid>
-        </form>
-      </Modal>
+          </form>
+        </Modal>
+      </Grid>
     </>
   );
 }
