@@ -26,9 +26,6 @@ const useStyles = makeStyles((theme) => ({
     //border: '1px solid red',
     padding: '4%',
     justifyContent: 'center',
-    [theme.breakpoints.up('sm')]: {
-      //marginTop: '0%',
-    },
     [theme.breakpoints.up('md')]: {
       marginTop: '4%',
     },
@@ -57,7 +54,6 @@ const useStyles = makeStyles((theme) => ({
   h3: {
     fontSize: '1.5em',
     fontFamily: 'grandstander',
-    //fontFamily: 'Lato Bold',
     color: '#00d1be',
     marginBottom: '4%',
     [theme.breakpoints.up('sm')]: {

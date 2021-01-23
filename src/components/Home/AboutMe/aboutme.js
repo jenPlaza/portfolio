@@ -135,8 +135,6 @@ export default function About() {
               <a
                 className={classes.button}
                 href="/portfolio/aboutme/"
-                //href="/jennplaza/about"
-                //href="https://jenplaza.github.io/jennplaza-aboutme/"
                 value="About Me"
               >
                 <Rotate count={10} duration={10000}>

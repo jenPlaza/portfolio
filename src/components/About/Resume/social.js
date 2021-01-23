@@ -258,11 +258,7 @@ export default function About() {
         </Grid>
         <Grid item xs={12}>
           <h3 className={classes.portfolio}>
-            <a
-              style={{ color: '#e2b575' }}
-              //href="https://jenplaza.github.io/jennplaza/#portfolio"
-              href="/portfolio/#projects"
-            >
+            <a style={{ color: '#e2b575' }} href="/portfolio/#projects">
               To My Portfolio
             </a>
           </h3>

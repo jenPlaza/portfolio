@@ -23,7 +23,6 @@ const useStyles = makeStyles((theme) => ({
   },
   recommendationsRow: {
     padding: '4% 5% 1% 5%',
-    //backgroundColor: '#A6A36C',
     backgroundColor: '#333333',
     color: 'white',
     fontSize: '2em',

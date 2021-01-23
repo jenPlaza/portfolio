@@ -60,7 +60,6 @@ const useStyles = makeStyles((theme) => ({
       marginTop: '10%',
     },
     [theme.breakpoints.up('xl')]: {
-      //margin: '7.5% 0% 0% 5%',
       margin: '6.5% 0% 0% 5%',
     },
   },

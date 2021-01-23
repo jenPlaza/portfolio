@@ -12,8 +12,7 @@ import Grid from '@material-ui/core/Grid';
 //style
 const useStyles = makeStyles((theme) => ({
   root: {
-    /*   textAlign: 'left',
-    border: '1px solid blue', */
+    //border: '1px solid blue',
   },
   aboutMeRow: {
     padding: '1%',

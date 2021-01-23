@@ -48,15 +48,10 @@ const useStyles = makeStyles((theme) => ({
   eBtn: {
     width: '95%',
     [theme.breakpoints.up('sm')]: {
-      //marginTop: '4%',
       width: '75%',
     },
     [theme.breakpoints.up('md')]: {
       width: '95%',
-    },
-    [theme.breakpoints.up('lg')]: {
-      //marginTop: '-1%',
-      //width: '37%',
     },
     [theme.breakpoints.up('xl')]: {
       marginTop: '-7%',
@@ -106,12 +101,7 @@ export default function About() {
           <Grid item xs={6} md={3} lg={2}>
             {/* <PrintButton /> */}
             <a href="resume_2021.pdf" download>
-              <img
-                className={classes.eBtn}
-                src={printme}
-                alt={'test'}
-                /* onClick={this.print} */
-              />
+              <img className={classes.eBtn} src={printme} alt={'test'} />
             </a>
           </Grid>
           <Grid item xs={6} md={4} lg={3}>

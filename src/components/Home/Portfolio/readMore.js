@@ -39,9 +39,6 @@ const useStyles = makeStyles((theme) => ({
       marginTop: '3%',
       padding: '0% 0% 0% 0%',
     },
-    /* [theme.breakpoints.up('xl')]: {
-      marginTop: '6%',
-    }, */
   },
   openModalBtn: {
     color: 'turquoise',
@@ -82,7 +79,6 @@ const useStyles = makeStyles((theme) => ({
     width: '100%',
     [theme.breakpoints.up('sm')]: {
       width: '100%',
-      //paddingLeft: '13%',
     },
   },
   h2: {

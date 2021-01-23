@@ -119,7 +119,6 @@ export default function Footer() {
         {/*  LOGO */}
 
         <Grid item xs={3} md={2}>
-          {/* <a href="https://jenplaza.github.io/jennplaza/"> */}
           <a href="/portfolio/">
             <img src={logoButton} alt="Logo Button" className={classes.logob} />
           </a>
