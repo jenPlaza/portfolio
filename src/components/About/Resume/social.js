@@ -9,18 +9,18 @@ import HomeIcon from '@material-ui/icons/Home';
 //style
 const useStyles = makeStyles((theme) => ({
   root: {
-    color: '#00d1be',
+    //color: '#00d1be',
     margin: '0%',
     textAlign: 'left',
-    fontSize: '1.50em',
+    fontSize: '1em',
     [theme.breakpoints.up('xs')]: {
-      margin: '-5% 0% 1% -3%',
+      margin: '130% 0% 1% -3%',
     },
     [theme.breakpoints.up('sm')]: {
-      margin: '-35% 0% 1% -3%',
+      margin: '25% 0% 1% -3%',
     },
     [theme.breakpoints.up('md')]: {
-      margin: '-50% 0% 1% -3%',
+      margin: '8% 0% 1% -3%',
     },
     [theme.breakpoints.up('lg')]: {
       margin: '-3% 0% 1% 0%',
@@ -30,8 +30,8 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   h3: {
-    fontSize: '1.8em',
-    color: '#5CFFF1',
+    color: '#adfff8',
+    fontSize: '1.6em',
     margin: '0% 0% 3% 0%',
     [theme.breakpoints.up('sm')]: {
       margin: '-7% 0% 0% 0%',
@@ -43,20 +43,31 @@ const useStyles = makeStyles((theme) => ({
       margin: '3% 0% 11% 0%',
     },
   },
-  resume: {
-    fontSize: '2.8em',
-    margin: '-5% 0% 5% 0%',
+  recommend: {
+    fontSize: '1em',
+    color: '#00CCBB',
     [theme.breakpoints.up('sm')]: {
-      margin: '4% 0% 0% 0%',
-      fontSize: '2.5em',
+      fontSize: '1.5em',
+    },
+    [theme.breakpoints.up('lg')]: {
+      fontSize: '1.1em',
+    },
+  },
+  resume: {
+    fontSize: '1.4em',
+    color: '#5CFFF1',
+    textTransform: 'uppercase',
+    margin: '-5% 0% 0% 0%',
+    [theme.breakpoints.up('sm')]: {
+      fontSize: '2em',
     },
     [theme.breakpoints.up('md')]: {
       margin: '10% 0% 0% 0%',
-      fontSize: '2.5em',
+      fontSize: '2.2em',
     },
     [theme.breakpoints.up('lg')]: {
-      margin: '20% 0% -2% 0%',
-      width: '120%',
+      margin: '25% 0% -2% 0%',
+      fontSize: '1.5em',
     },
     [theme.breakpoints.up('xl')]: {
       margin: '3% 0% 11% 0%',
@@ -66,10 +77,11 @@ const useStyles = makeStyles((theme) => ({
     fontSize: '1.9em',
     margin: '0% 0% 3% 0%',
     [theme.breakpoints.up('sm')]: {
-      margin: '4% 0% 0% 0%',
+      margin: '0% 0% 0% 0%',
+      fontSize: '2.1em',
     },
     [theme.breakpoints.up('lg')]: {
-      margin: '20% 0% -2% 0%',
+      margin: '0% 0% -2% 0%',
       width: '120%',
     },
     [theme.breakpoints.up('xl')]: {
@@ -78,11 +90,14 @@ const useStyles = makeStyles((theme) => ({
   },
   info: {
     [theme.breakpoints.up('sm')]: {
-      margin: '-1% 0% 1% 0%',
+      margin: '0% 0% 0% 0%',
     },
   },
   socialContainer: {
     margin: '10% 0% 1% 0%',
+    [theme.breakpoints.up('sm')]: {
+      margin: '14% 0% 1% 0%',
+    },
     [theme.breakpoints.up('lg')]: {
       margin: '3% 0% 1% 0%',
     },
@@ -96,7 +111,7 @@ const useStyles = makeStyles((theme) => ({
       margin: '15% 0% 15% 0%',
     },
     [theme.breakpoints.up('sm')]: {
-      margin: '11% 0% 1% 0%',
+      margin: '14% 0% 10% 0%',
     },
     [theme.breakpoints.up('lg')]: {
       margin: '5% 0% 1% 0%',
@@ -108,7 +123,7 @@ const useStyles = makeStyles((theme) => ({
   socialMedia: {
     margin: '8% 0% 1% 5%',
     paddingRight: '1%',
-    transform: 'scale(1.3)',
+    transform: 'scale(1.1)',
     [theme.breakpoints.up('sm')]: {
       margin: '3% 0% 1% 0%',
     },
@@ -213,22 +228,32 @@ export default function About() {
         </Grid>
         <Grid container xs={12} className={classes.info}>
           <Grid item xs={12}>
-            <p>English</p>
-            <p>Spanish</p>
+            <p>
+              English
+              <br />
+              Spanish
+            </p>
           </Grid>
         </Grid>
       </Grid>
       {/*  RESUME and PORTFOLIO Links */}
-      <Grid container className={classes.info}>
+      <Grid container>
         <Grid item xs={12}>
-          <h3 className={classes.resume}>
-            <Link
-              style={{ color: 'turquoise' }}
-              href="https://jenplaza.github.io/jennplaza-resume/"
-              to="resume"
-            >
+          <h3>
+            <a href="resume_2021.pdf" className={classes.resume} download>
               My Resume
-            </Link>
+            </a>
+          </h3>
+        </Grid>
+        <Grid item xs={12}>
+          <h3>
+            <a
+              className={classes.recommend}
+              href="JenniferPlaza_Recommendation.pdf"
+              download="recommendation_letter.pdf"
+            >
+              A Recommendation Letter
+            </a>
           </h3>
         </Grid>
         <Grid item xs={12}>
@@ -238,7 +263,7 @@ export default function About() {
               //href="https://jenplaza.github.io/jennplaza/#portfolio"
               href="/portfolio/#projects"
             >
-              Back To My Portfolio
+              To My Portfolio
             </a>
           </h3>
         </Grid>

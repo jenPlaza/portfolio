@@ -6,7 +6,6 @@ const useStyles = makeStyles((theme) => ({
   root: {
     color: 'white',
     height: 'auto',
-    fontSize: '1.50em',
     //border: '1px solid yellow',
     [theme.breakpoints.up('sm')]: {
       marginTop: '0%',
@@ -34,8 +33,8 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   h3: {
-    color: '#5CFFF1',
-    fontSize: '1.8em',
+    color: '#adfff8',
+    fontSize: '1.6em',
     margin: '10% 0% 3% 0%',
     [theme.breakpoints.up('sm')]: {
       margin: '5% 0% 1% 0%',
@@ -48,7 +47,19 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   h4: {
-    color: '#00E0CE',
+    color: '#5CFFF1',
+    fontSize: '1.2em',
+  },
+  h5: {
+    fontSize: '1em',
+    [theme.breakpoints.up('lg')]: {
+      listStyleType: 'none',
+    },
+  },
+  ul: {
+    [theme.breakpoints.up('lg')]: {
+      listStyleType: 'none',
+    },
   },
 }));
 
@@ -64,56 +75,92 @@ export default function About() {
           <h4 className={classes.h4}>
             <b>Full Sail University</b>
           </h4>
-          <h5>Web Design & Development, Nov 2017 – Nov 2020</h5>
-          <h5>Internet Marketing, Mar 2017 – Nov 2017</h5>
+          <h5 className={classes.h5}>
+            Web Design & Development (BS), Nov 2017 – Nov 2020
+          </h5>
+          <h5 className={classes.h5}>
+            Internet Marketing, Mar 2017 – Nov 2017
+          </h5>
           <br />
-          <h4 className={classes.h4}>
-            <b>Miami Dade Community College</b>
-          </h4>
-          <h5>Associate of Arts (AA), 1997 – 1999</h5>
+
           <h3 className={classes.h3}>Experience</h3>
           <h4 className={classes.h4}>
-            <b>IT Implementation and Support Coordinator</b>
+            <b>Undergraduate Student</b>
           </h4>
-          <h5>
+          <h5 className={classes.h5}>
             {' '}
-            at AHLEI- American Hotel & Lodging Educational Institute
+            Full Sail University
             <br />
-            <i> January 2013 - January 2017 (4 years 1 month)</i>
+            <i> March 2017 - Noveber 2020</i>
           </h5>
           <br />
           <h4 className={classes.h4}>
-            <b>Marketing Coordinator</b>
+            <b>IT Implementation & Support COORD</b>
           </h4>
-          <h5>
+          <h5 className={classes.h5}>
             {' '}
-            at American Hotel & Lodging Educational Institute
+            American Hotel & Lodging Educational Institute
             <br />
-            <i>January 2010 - December 2012 (3 years)</i>
+            <i> January 2013 - January 2017 </i>
           </h5>
           <br />
           <h4 className={classes.h4}>
-            <b>Certification Agent</b>
+            <b>Marketing COORD</b>
           </h4>
-          <h5>
+          <h5 className={classes.h5}>
             {' '}
-            at American Hotel & Lodging Educational Institute
+            American Hotel & Lodging Educational Institute
             <br />
-            <i> October 2006 - December 2009 (3 years 3 months)</i>
+            <i>January 2010 - December 2012 </i>
           </h5>
+          <br />
+
           <h3 className={classes.h3}>Skills</h3>
-          <h5>- Well-versed in both English & Spanish</h5>
-          <h5>- Efficient time management skills</h5>
-          <h5>- Disciplined and well organized</h5>
-          <h5>-Proficient in Microsoft Office</h5>
-          <h5>- Efficient in Git/ Version Control</h5>
-          <h5>- Efficient in Adobe XD</h5>
-          <h5>-Efficient in coding Html, CSS, JavaScript</h5>
-          <h5>- Knowledgeable in coding C#</h5>
-          <h5>- Efficient in Bootstrap, React, and Express frameworks</h5>
-          <h5>-Knowledgeable in Photoshop, InDesign</h5>
-          <h5>- Knowledgeable in WordPress</h5>
-          <h5>-Knowledgeable in using Sequel Pro, My SQL Workbench</h5>
+          <h4 className={classes.h4}>WEB DEVELOPMENT</h4>
+          <h5 className={classes.h5}>
+            <ul className={classes.ul}>
+              <li>Efficient in Git/ Version Control</li>
+              <li>Efficient Adobe software suite </li>
+              <li>Efficient in Html, CSS, JavaScript</li>
+              <li>
+                Efficient in using Bootstrap, React, Material UI, and Express 
+              </li>
+              <li>Efficient in User Interface Design</li>
+              <li>
+                Efficient in database management using Sequel Pro, MySQL
+                Workbench
+              </li>
+              <li>Proficient in WordPress, Ektron </li>
+              <li>Knowledgeable in coding C# </li>
+            </ul>
+          </h5>
+
+          <h4 className={classes.h4}>SOCIAL</h4>
+          <h5 className={classes.h5}>
+            Proficient in:
+            <ul className={classes.ul}>
+              <li>Creative</li>
+              <li>Problem Solver</li>
+              <li>Organized</li>
+              <li>Fast Learner</li>
+              <li>Team Player</li>
+              <li>Customer Service</li>
+              <li>Time Management</li>
+            </ul>
+          </h5>
+
+          <h4 className={classes.h4}>MANEGERIAL</h4>
+          <h5 className={classes.h5}>
+            <ul className={classes.ul}>
+              <li>Bilingual, English & Spanish</li>
+              <li>Proficient in Microsoft Office</li>
+              <li>
+                Efficient in customizing Salesforce & Sharepoint workflows
+              </li>
+              <li>Efficient in Writing Proposals for Business Projects</li>
+              <li>Efficient in using Planning Software</li>
+            </ul>
+          </h5>
         </Grid>
       </Grid>
     </div>

@@ -12,20 +12,74 @@ import { makeStyles, Grid } from '@material-ui/core';
 //style
 const useStyles = makeStyles((theme) => ({
   root: {
+    //border: '1px solid yellow',
     flexGrow: 1,
     overflow: 'hidden',
-    fontSize: '1.1em',
+    fontSize: '1em',
     backgroundColor: '#333333',
+    color: '#00d1be',
+    fontFamily: 'lato',
+    margin: 'auto',
   },
   containerColumn: {
-    padding: '5%',
+    //border: '1px solid red',
+    padding: '4%',
     justifyContent: 'center',
+    [theme.breakpoints.up('sm')]: {
+      //marginTop: '0%',
+    },
     [theme.breakpoints.up('md')]: {
-      padding: '5% 5% 5% 15%',
+      marginTop: '4%',
+    },
+  },
+  h1: {
+    marginTop: '15%',
+    fontSize: '1.8em',
+    color: 'white',
+    fontFamily: 'Zapfino',
+    [theme.breakpoints.up('sm')]: {
+      fontSize: '1.7em',
+      marginTop: '2%',
+    },
+    [theme.breakpoints.up('md')]: {
+      fontSize: '2.5em',
+      marginTop: '-3%',
+    },
+    [theme.breakpoints.up('lg')]: {
+      marginTop: '0%',
+    },
+    [theme.breakpoints.up('xl')]: {
+      fontSize: '2.8em',
+      marginTop: '5%',
+    },
+  },
+  h3: {
+    fontSize: '1.5em',
+    fontFamily: 'grandstander',
+    //fontFamily: 'Lato Bold',
+    color: '#00d1be',
+    marginBottom: '4%',
+    [theme.breakpoints.up('sm')]: {
+      fontSize: '1.5em',
+      margin: '-6.5% 0% 0% 20%',
+      marginBottom: '3%',
+    },
+    [theme.breakpoints.up('md')]: {
+      margin: '-3% 0% 0% -80%',
+      fontSize: '2.5em',
+    },
+    [theme.breakpoints.up('lg')]: {
+      fontSize: '2em',
+      margin: '2% 0% 0% -190%',
+      marginBottom: '5%',
+    },
+    [theme.breakpoints.up('xl')]: {
+      fontSize: '2.8em',
+      margin: '10% 0% 7% -195%',
     },
   },
   aboutMeRow: {
-    fontSize: '2em',
+    fontSize: '1.25em',
     fontFamily: 'Lato',
     color: '#e2b575',
     marginTop: '50%',
@@ -86,49 +140,6 @@ const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.up('xl')]: {
       margin: '2% 0% -7% 0%',
-    },
-  },
-  h1: {
-    marginTop: '20%',
-    fontSize: '1.7em',
-    fontFamily: 'Zapfino',
-    color: 'white',
-    [theme.breakpoints.up('sm')]: {
-      fontSize: '1.6em',
-    },
-    [theme.breakpoints.up('md')]: {
-      fontSize: '2.3em',
-      marginTop: '20%',
-    },
-    [theme.breakpoints.up('lg')]: {
-      fontSize: '2.3em',
-    },
-    [theme.breakpoints.up('xl')]: {
-      fontSize: '2.8em',
-      marginTop: '24%',
-    },
-  },
-  h3: {
-    fontSize: '2em',
-    fontFamily: 'Lato Bold',
-    color: '#00d1be',
-    marginBottom: '4%',
-    [theme.breakpoints.up('sm')]: {
-      fontSize: '1.5em',
-      margin: '-7.5% 0% 0% 25%',
-      marginBottom: '5%',
-    },
-    [theme.breakpoints.up('md')]: {
-      margin: '29% 0% 10% -65%',
-    },
-    [theme.breakpoints.up('lg')]: {
-      fontSize: '2em',
-      margin: '40% 0% 0% -160%',
-      marginBottom: '15%',
-    },
-    [theme.breakpoints.up('xl')]: {
-      fontSize: '3em',
-      margin: '45% 0% 15% -165%',
     },
   },
 }));

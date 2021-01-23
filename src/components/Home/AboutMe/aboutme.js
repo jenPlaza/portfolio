@@ -10,12 +10,13 @@ const useStyles = makeStyles((theme) => ({
   root: {
     //border: '1px solid pink',
     flexGrow: 1,
+    overflow: 'hidden',
+    fontSize: '1em',
     color: '#00d1be',
     fontFamily: 'lato',
     width: '90%',
     marginTop: '5%',
     margin: 'auto',
-    fontSize: '1em',
     [theme.breakpoints.up('sm')]: {
       marginTop: '-8%',
     },

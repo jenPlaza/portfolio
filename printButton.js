@@ -4,7 +4,7 @@ import imgUrl from '../../../images/printMe.png';
 
 class PrintButton extends React.Component {
   print(event) {
-    window.onclick = event => {
+    window.onclick = (event) => {
       window.print();
     };
   }
@@ -12,12 +12,14 @@ class PrintButton extends React.Component {
   render() {
     return (
       <div>
-        <img
-          style={styles.Btn}
-          src={imgUrl}
-          alt={'test'}
-          onClick={this.print}
-        />
+        <a href="resume_2021.pdf" download>
+          <img
+            style={styles.Btn}
+            src={imgUrl}
+            alt={'test'}
+            onClick={this.print}
+          />
+        </a>
       </div>
     );
   }
@@ -28,6 +30,6 @@ export default PrintButton;
 const styles = {
   Btn: {
     width: '55%',
-    margin: '14%'
-  }
+    margin: '14%',
+  },
 };
