@@ -64,12 +64,17 @@ const useStyles = makeStyles((theme) => ({
     width: '95%',
     marginTop: '-35%',
     [theme.breakpoints.up('sm')]: {
-      margin: '-12% 0% 30% 0%',
+      margin: '-13% 0% 30% 0%',
       width: '75%',
     },
     [theme.breakpoints.up('md')]: {
       width: '70%',
       marginTop: '-15%',
+      marginLeft: '15%',
+    },
+    [theme.breakpoints.up('lg')]: {
+      width: '65%',
+      marginLeft: '15%',
     },
     [theme.breakpoints.up('xl')]: {
       marginLeft: '0%',

@@ -20,6 +20,7 @@ const useStyles = makeStyles((theme) => ({
     color: '#00d1be',
     fontFamily: 'lato',
     margin: 'auto',
+    paddingLeft: '4%',
   },
   containerColumn: {
     //border: '1px solid red',
