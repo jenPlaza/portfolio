@@ -38,6 +38,9 @@ const useStyles = makeStyles((theme) => ({
   },
   btnContainer: {
     marginTop: '5%',
+    [theme.breakpoints.up('lg')]: {
+      marginBottom: '-2%',
+    },
     [theme.breakpoints.up('xl')]: {
       marginBottom: '-4%',
     },
