@@ -1,11 +1,9 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles, Grid } from '@material-ui/core';
+import Tada from 'react-reveal/Tada';
 
-//Images & Icons
+//image
 import imgUrl from '../images/blogBkg.png';
-
-//Material UI
-import Grid from '@material-ui/core/Grid';
 
 //style
 const useStyles = makeStyles((theme) => ({
@@ -51,7 +49,9 @@ export default function Blog() {
 
         <Grid item xs={12} className={classes.blog}>
           <hr />
-          <h2>Coming Soon</h2>
+          <Tada>
+            <h2>Coming Soon</h2>
+          </Tada>
         </Grid>
       </Grid>
     </div>
