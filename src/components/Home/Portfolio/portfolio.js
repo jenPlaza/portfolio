@@ -13,13 +13,13 @@ const useStyles = makeStyles((theme) => ({
     width: '100%',
     marginTop: '30%',
     [theme.breakpoints.up('sm')]: {
-      marginTop: '10%',
+      marginTop: '15%',
     },
     [theme.breakpoints.up('md')]: {
-      marginTop: '5%',
+      marginTop: '12%',
     },
     [theme.breakpoints.up('lg')]: {
-      marginTop: '10%',
+      marginTop: '12%',
     },
     [theme.breakpoints.up('xl')]: {
       marginTop: '0%',

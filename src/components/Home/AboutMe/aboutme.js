@@ -63,7 +63,6 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   button: {
-    //position: 'absolute',
     fontSize: '0.8em',
     textAlign: 'center',
     color: '#0A0300',
@@ -77,10 +76,10 @@ const useStyles = makeStyles((theme) => ({
     background: 'turquoise',
     transition: '1s ease-in-out',
     [theme.breakpoints.up('lg')]: {
-      height: '175px',
-      width: '175px',
+      height: '217px',
+      width: '217px',
       marginTop: '2%',
-      fontSize: '0.75em',
+      fontSize: '1em',
     },
     [theme.breakpoints.up('xl')]: {
       marginTop: '0%',
@@ -97,7 +96,7 @@ const useStyles = makeStyles((theme) => ({
       },
       [theme.breakpoints.up('lg')]: {
         color: '#e2b575',
-        fontSize: '0.7em',
+        fontSize: '0.9em',
       },
     },
   },

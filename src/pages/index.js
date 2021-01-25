@@ -24,15 +24,15 @@ const useStyles = makeStyles((theme) => ({
   },
   portfolioRow: {
     backgroundColor: 'white',
-    marginTop: '8%',
+    marginTop: '-25%',
     [theme.breakpoints.up('sm')]: {
-      marginTop: '8%',
+      marginTop: '-17%',
     },
     [theme.breakpoints.up('lg')]: {
-      marginTop: '-2%',
+      marginTop: '-15%',
     },
     [theme.breakpoints.up('xl')]: {
-      marginTop: '2%',
+      marginTop: '-4%',
     },
   },
 }));
