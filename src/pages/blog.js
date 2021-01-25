@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { makeStyles, Grid } from '@material-ui/core';
 import Tada from 'react-reveal/Tada';
 
@@ -13,18 +13,29 @@ const useStyles = makeStyles((theme) => ({
   container: {
     //border: '1px solid blue',
     textAlign: 'center',
-    marginTop: '25%',
+    marginTop: '10%',
     [theme.breakpoints.up('sm')]: {
       marginTop: '0%',
     },
   },
   h1: {
-    fontSize: '2.5em',
+    fontSize: '2em',
     margin: 'auto',
     marginTop: '15%',
     fontFamily: 'Zapfino',
     [theme.breakpoints.up('sm')]: {
-      marginTop: '5%',
+      marginTop: '11%',
+    },
+    [theme.breakpoints.up('md')]: {
+      marginTop: '15%',
+      fontSize: '2.5em',
+    },
+    [theme.breakpoints.up('lg')]: {
+      marginTop: '17%',
+      fontSize: '3em',
+    },
+    [theme.breakpoints.up('xl')]: {
+      marginTop: '10%',
     },
   },
   blog: {
@@ -34,14 +45,15 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up('sm')]: {
       marginTop: '5%',
     },
-    [theme.breakpoints.up('xl')]: {
-      //marginTop: '25%',
-    },
   },
 }));
 
-export default function Blog() {
+//export default function Blog() {
+const Blog = (props) => {
+  const [isOpen, setIsOpen] = useState(false);
+  const toggle = () => setIsOpen(!isOpen);
   const classes = useStyles();
+
   return (
     <div className={classes.root} style={styles.bkg}>
       <Grid container spacing={0} className={classes.container}>
@@ -56,7 +68,9 @@ export default function Blog() {
       </Grid>
     </div>
   );
-}
+};
+
+export default Blog;
 
 const styles = {
   bkg: {

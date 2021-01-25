@@ -13,13 +13,29 @@ import Grid from '@material-ui/core/Grid';
 const useStyles = makeStyles((theme) => ({
   root: {
     //border: '1px solid blue',
+    marginTop: '-44%',
+    [theme.breakpoints.up('sm')]: {
+      marginTop: '-35%',
+    },
+    [theme.breakpoints.up('md')]: {
+      marginTop: '-15%',
+    },
+    [theme.breakpoints.up('lg')]: {
+      marginTop: '-10%',
+    },
+    [theme.breakpoints.up('xl')]: {
+      margin: '-28% 0% 0% 0%',
+    },
   },
   aboutMeRow: {
     padding: '1%',
     marginTop: '30%',
     marginBottom: '10%',
+    [theme.breakpoints.up('lg')]: {
+      marginTop: '-5%',
+    },
     [theme.breakpoints.up('xl')]: {
-      marginTop: '25%',
+      marginTop: '-3%',
     },
   },
   portfolioRow: {
@@ -29,10 +45,10 @@ const useStyles = makeStyles((theme) => ({
       marginTop: '-17%',
     },
     [theme.breakpoints.up('lg')]: {
-      marginTop: '-15%',
+      marginTop: '-16%',
     },
     [theme.breakpoints.up('xl')]: {
-      marginTop: '-4%',
+      marginTop: '-15%',
     },
   },
 }));
@@ -59,6 +75,6 @@ const styles = {
   container: {
     backgroundImage: 'url(' + imgUrl + ')',
     backgroundRepeat: 'no-repeat',
-    margin: '-39% 0% 0% 0%',
+    //margin: '-44% 0% 0% 0%',
   },
 };

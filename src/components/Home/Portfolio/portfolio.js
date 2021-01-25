@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
       marginTop: '12%',
     },
     [theme.breakpoints.up('xl')]: {
-      marginTop: '0%',
+      marginTop: '10%',
     },
   },
   container: {

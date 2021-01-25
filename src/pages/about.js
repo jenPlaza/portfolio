@@ -19,36 +19,42 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: '#333333',
     color: '#00d1be',
     fontFamily: 'lato',
-    margin: 'auto',
     paddingLeft: '4%',
   },
   containerColumn: {
     //border: '1px solid red',
     padding: '4%',
     justifyContent: 'center',
+    [theme.breakpoints.up('sm')]: {
+      marginTop: '8%',
+    },
     [theme.breakpoints.up('md')]: {
-      marginTop: '4%',
+      marginTop: '8%',
+    },
+    [theme.breakpoints.up('lg')]: {
+      marginTop: '6%',
     },
   },
   h1: {
-    marginTop: '15%',
+    marginTop: '60%',
     fontSize: '1.8em',
     color: 'white',
     fontFamily: 'Zapfino',
     [theme.breakpoints.up('sm')]: {
-      fontSize: '1.7em',
-      marginTop: '2%',
+      fontSize: '1.5em',
+      marginTop: '15%',
     },
     [theme.breakpoints.up('md')]: {
-      fontSize: '2.5em',
-      marginTop: '-3%',
+      fontSize: '2.2em',
+      marginTop: '23%',
     },
     [theme.breakpoints.up('lg')]: {
-      marginTop: '0%',
+      fontSize: '2.6em',
+      marginTop: '30%',
     },
     [theme.breakpoints.up('xl')]: {
       fontSize: '2.8em',
-      marginTop: '5%',
+      marginTop: '20%',
     },
   },
   h3: {
@@ -62,20 +68,21 @@ const useStyles = makeStyles((theme) => ({
       marginBottom: '3%',
     },
     [theme.breakpoints.up('md')]: {
-      margin: '-3% 0% 0% -80%',
-      fontSize: '2.5em',
+      margin: '33% 0% 0% -88%',
+      fontSize: '1.9em',
     },
     [theme.breakpoints.up('lg')]: {
       fontSize: '2em',
-      margin: '2% 0% 0% -190%',
+      margin: '62% 0% 0% -190%',
       marginBottom: '5%',
     },
     [theme.breakpoints.up('xl')]: {
       fontSize: '2.8em',
-      margin: '10% 0% 7% -195%',
+      margin: '40% 0% 7% -195%',
     },
   },
   aboutMeRow: {
+    //border: '1px solid blue',
     fontSize: '1.25em',
     fontFamily: 'Lato',
     color: '#e2b575',
@@ -145,7 +152,6 @@ export default function About() {
   const classes = useStyles();
   return (
     <div className={classes.root} style={styles.container}>
-      <h2>About</h2>
       <Grid container spacing={0}>
         {/* HEADER */}
         <Grid container spacing={0} className={classes.containerColumn}>
@@ -251,7 +257,7 @@ const styles = {
   container: {
     backgroundImage: 'url(' + imgUrl + ')',
     backgroundRepeat: 'no-repeat',
-    margin: '-39% 0% 0% 0%',
-    height: 'auto',
+    margin: '-44% 0% 0% 0%',
+    //height: 'auto',
   },
 };

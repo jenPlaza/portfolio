@@ -25,58 +25,54 @@ const useStyles = makeStyles((theme) => ({
   img: {
     //border: '1px solid red',
     float: 'left',
-    margin: '0% 0% 5% 0%',
+    margin: '12% 0% 5% 0%',
     width: '75%',
     [theme.breakpoints.up('sm')]: {
-      margin: '0% 0% 0% 0%',
+      margin: '28% 0% 0% 0%',
       width: '100%',
     },
     [theme.breakpoints.up('md')]: {
-      margin: '-13% 0% 0% 0%',
+      margin: '25% 0% 0% 0%',
       width: '55%',
     },
     [theme.breakpoints.up('lg')]: {
-      margin: '-5% 0% 0% 0%',
       width: '30%',
     },
     [theme.breakpoints.up('xl')]: {
-      margin: '5% 0% 0% 5%',
+      margin: '18% 0% 0% 5%',
       width: '25%',
     },
   },
   navbar: {
     //border: '1px solid pink',
-    height: '75px',
-    marginTop: '10%',
+    paddingLeft: '5%',
+    height: '165px',
+    marginTop: '0%',
     width: '95%',
     margin: 'auto',
     [theme.breakpoints.up('sm')]: {
       width: '90%',
-    },
-    [theme.breakpoints.up('md')]: {
-      marginTop: '15%',
-    },
-    [theme.breakpoints.up('lg')]: {
-      marginTop: '10%',
+      height: '135px',
     },
     [theme.breakpoints.up('xl')]: {
-      margin: '6.5% 0% 0% 5%',
+      margin: '0% 0% 0% 0%',
+      height: '175px',
     },
   },
   navItem: {
     color: '#00d1be !important',
     fontSize: '1em !important',
     padding: '1%',
-    margin: '19% 4% 0% 0%',
+    margin: '19% 4% 0% -1%',
     display: 'inline-block',
     [theme.breakpoints.up('sm')]: {
-      marginTop: '0%',
+      marginTop: '11%',
     },
     [theme.breakpoints.up('md')]: {
-      marginTop: '35%',
+      marginTop: '55%',
     },
     [theme.breakpoints.up('lg')]: {
-      marginTop: '16%',
+      marginTop: '62%',
     },
   },
   navItemContainer: {
@@ -117,16 +113,20 @@ const Header = (props) => {
   return (
     <div>
       <nav
-      //style={{color:useLocation().pathname === '/blog' ? 'transparent' : 'bg-light',}}
+        style={{
+          background:
+            useLocation().pathname === '/blog' ? 'transparent' : 'black',
+        }}
       >
         <Navbar
-          //color="transparent"
+          color="transparent"
           dark
           expand="md"
           className={classes.navbar}
-          style={{
-            bg: useLocation().pathname === '/blog' ? 'transparent' : 'light',
-          }}
+          /* style={{
+        navbarTogglerIcon:
+          useLocation().pathname === '/blog' ? 'navbar-light' : 'navbar-dark', 
+      }}*/
         >
           <NavbarBrand className={classes.navbarBrand} href="/portfolio/">
             <Jello duration={25000} forever>

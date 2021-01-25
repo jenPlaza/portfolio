@@ -15,10 +15,11 @@ const useStyles = makeStyles((theme) => ({
       margin: '-15% 0% 5% 0%',
     },
     [theme.breakpoints.up('lg')]: {
-      marginTop: '21%',
+      margin: '10% 0% 5% 40%',
+      //border: '1px solid red',
     },
     [theme.breakpoints.up('xl')]: {
-      marginTop: '13%',
+      marginTop: '3%',
     },
   },
   h1: {
@@ -42,7 +43,7 @@ const useStyles = makeStyles((theme) => ({
       marginBottom: '-2%',
     },
     [theme.breakpoints.up('xl')]: {
-      marginBottom: '-4%',
+      marginBottom: '-8%',
     },
   },
   eBtn: {
@@ -72,6 +73,7 @@ const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.up('lg')]: {
       width: '65%',
+      marginTop: '-25%',
       marginLeft: '15%',
     },
     [theme.breakpoints.up('xl')]: {
@@ -91,7 +93,7 @@ export default function About() {
         <h1 className={classes.h1}>Contact Me</h1>
       </Grid>
       <Grid container>
-        <Grid item xs={12} md={5} lg={6}>
+        <Grid item xs={12} md={5} lg={12}>
           <h3 className={classes.h3}>
             Want to work together or just chat about life, feel free to contact
             me.
