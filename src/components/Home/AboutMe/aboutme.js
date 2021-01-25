@@ -63,7 +63,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   button: {
-    position: 'absolute',
+    //position: 'absolute',
     fontSize: '0.8em',
     textAlign: 'center',
     color: '#0A0300',
@@ -130,8 +130,9 @@ export default function About() {
             is eager to contribute to a culture that has a mission that will be
             rewarding both mentally and financially.
           </p>
-          <Bounce top>
-            <Grid item xs={12} sm={8} md={8} lg={4}>
+
+          <Grid item xs={12} sm={8} md={8} lg={4}>
+            <Bounce top>
               <a
                 className={classes.button}
                 href="/portfolio/aboutme/"
@@ -141,8 +142,8 @@ export default function About() {
                   <p className={classes.btnText}>About Me</p>
                 </Rotate>
               </a>
-            </Grid>
-          </Bounce>
+            </Bounce>
+          </Grid>
         </Grid>
       </Grid>
     </div>

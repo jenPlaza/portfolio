@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import {
   Collapse,
   Navbar,
@@ -111,49 +111,69 @@ const useStyles = makeStyles((theme) => ({
 //exporting a class footer
 const Header = (props) => {
   const [isOpen, setIsOpen] = useState(false);
-
   const toggle = () => setIsOpen(!isOpen);
   const classes = useStyles();
+
   return (
     <div>
-      <Navbar color="transparent" dark expand="md" className={classes.navbar}>
-        <NavbarBrand className={classes.navbarBrand} href="/portfolio/">
-          <Jello duration={25000} forever>
-            <img className={classes.img} src={logo} alt="Logo" />
-          </Jello>
-        </NavbarBrand>
-        <NavbarToggler className="navbar-toggler ml-auto" onClick={toggle} />
-        <Collapse isOpen={isOpen} navbar>
-          <Nav className="mr-auto">
-            <div className={classes.navItemContainer}>
-              {/* HOME */}
-              <NavItem className={classes.navItem}>
-                <Link className={classes.navLink} to="/portfolio/">
-                  Home
-                </Link>
-              </NavItem>
-              {/* ABOUT */}
-              <NavItem className={classes.navItem}>
-                <Link className={classes.navLink} to="/portfolio/aboutme">
-                  About
-                </Link>
-              </NavItem>
-              {/* BLOG */}
-              <NavItem className={classes.navItem}>
-                <Link className={classes.navLink} to="/portfolio/blog/">
-                  Blog
-                </Link>
-              </NavItem>
-              {/* RESUME */}
-              <NavItem className={classes.navItem}>
-                <a className={classes.navLink} href="resume_2021.pdf" download>
-                  Resume
-                </a>
-              </NavItem>
-            </div>
-          </Nav>
-        </Collapse>
-      </Navbar>
+      <nav
+      //style={{color:useLocation().pathname === '/blog' ? 'transparent' : 'bg-light',}}
+      >
+        <Navbar
+          //color="transparent"
+          dark
+          expand="md"
+          className={classes.navbar}
+          style={{
+            bg: useLocation().pathname === '/blog' ? 'transparent' : 'light',
+          }}
+        >
+          <NavbarBrand className={classes.navbarBrand} href="/portfolio/">
+            <Jello duration={25000} forever>
+              <img className={classes.img} src={logo} alt="Logo" />
+            </Jello>
+          </NavbarBrand>
+          <NavbarToggler
+            className="navbar-toggler ml-auto"
+            onClick={toggle}
+            //style={{color:useLocation().pathname === '/blog' ? 'transparent' : 'bg-light',}}
+          />
+          <Collapse isOpen={isOpen} navbar>
+            <Nav className="mr-auto">
+              <div className={classes.navItemContainer}>
+                {/* HOME */}
+                <NavItem className={classes.navItem}>
+                  <Link className={classes.navLink} to="/portfolio/">
+                    Home
+                  </Link>
+                </NavItem>
+                {/* ABOUT */}
+                <NavItem className={classes.navItem}>
+                  <Link className={classes.navLink} to="/portfolio/aboutme">
+                    About
+                  </Link>
+                </NavItem>
+                {/* BLOG */}
+                <NavItem className={classes.navItem}>
+                  <Link className={classes.navLink} to="/portfolio/blog/">
+                    Blog
+                  </Link>
+                </NavItem>
+                {/* RESUME */}
+                <NavItem className={classes.navItem}>
+                  <a
+                    className={classes.navLink}
+                    href="resume_2021.pdf"
+                    download
+                  >
+                    Resume
+                  </a>
+                </NavItem>
+              </div>
+            </Nav>
+          </Collapse>
+        </Navbar>
+      </nav>
     </div>
   );
 };
