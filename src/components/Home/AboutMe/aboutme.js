@@ -1,9 +1,10 @@
 // JavaScript Document
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Bounce, Rotate } from 'react-reveal';
 
 //Material UI
-import { makeStyles, Grid, Link } from '@material-ui/core';
+import { makeStyles, Grid } from '@material-ui/core';
 
 //styles
 const useStyles = makeStyles((theme) => ({
@@ -132,15 +133,15 @@ export default function About() {
 
           <Grid item xs={12} sm={8} md={8} lg={4}>
             <Bounce top>
-              <a
+              <Link
                 className={classes.button}
-                href="/portfolio/aboutme/"
+                to="/portfolio/aboutme"
                 value="About Me"
               >
                 <Rotate count={10} duration={10000}>
                   <p className={classes.btnText}>About Me</p>
                 </Rotate>
-              </a>
+              </Link>
             </Bounce>
           </Grid>
         </Grid>
