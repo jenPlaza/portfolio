@@ -81,6 +81,12 @@ const useStyles = makeStyles((theme) => ({
       width: '100%',
     },
   },
+  thumbnail: {
+    width: '33%',
+    /* [theme.breakpoints.up('sm')]: {
+        width: '100%',
+      }, */
+  },
   h2: {
     padding: '2%',
   },
@@ -106,6 +112,7 @@ export default function ReadMore() {
   const classes = useStyles();
   const [open, setOpen] = useState(false);
   const [title, setTitle] = useState('');
+  const [image, setImage] = useState('');
   const [description, setDescription] = useState('');
   const [repo, setRepo] = useState('');
   const [href, setHref] = useState('');
@@ -133,6 +140,7 @@ export default function ReadMore() {
             onClick={() => {
               handleOpen();
               setTitle(titleArray[i]);
+              setImage(imageArray[i]);
               setDescription(descriptionArray[i]);
               setRepo(repoArray[i]);
               setHref(hrefArray[i]);
@@ -163,6 +171,15 @@ export default function ReadMore() {
                 {/* MODAL BODY */}
                 <div className={classes.modalBody}>
                   <h2>{title}</h2>
+                  <br />
+                  <br />
+                  <a className={classes.links} href={href} target="_blank">
+                    <img
+                      className={classes.thumbnail}
+                      src={image}
+                      alt={'project home page'}
+                    />
+                  </a>
                   <br />
                   <br />
                   <h5>{description}</h5>

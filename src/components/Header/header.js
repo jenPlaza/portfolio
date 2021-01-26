@@ -117,9 +117,12 @@ const Header = (props) => {
   return (
     <div>
       <nav
+        //style={{background:useLocation().pathname === '/blog' ? 'transparent' : 'black', }}
         style={{
           background:
-            useLocation().pathname === '/blog' ? 'transparent' : 'black',
+            useLocation().pathname === '/blog'
+              ? 'transparent'
+              : 'rgba(51, 51, 51, 1)',
         }}
       >
         <Navbar
