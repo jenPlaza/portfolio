@@ -31,7 +31,7 @@ const useStyles = makeStyles((theme) => ({
       fontSize: '2.5em',
     },
     [theme.breakpoints.up('lg')]: {
-      marginTop: '17%',
+      marginTop: '12%',
       fontSize: '3em',
     },
     [theme.breakpoints.up('xl')]: {

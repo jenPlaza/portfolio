@@ -60,10 +60,12 @@ const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.up('lg')]: {
       fontSize: '2.50em',
-      marginTop: '15%',
+      backgroundColor: 'rgba(24, 8, 0, 0.2)',
+      marginTop: '12%',
     },
     [theme.breakpoints.up('xl')]: {
       backgroundColor: 'rgba(24, 8, 0, 0.2)',
+      marginTop: '15%',
     },
   },
   button: {

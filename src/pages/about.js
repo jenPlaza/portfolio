@@ -32,6 +32,9 @@ const useStyles = makeStyles((theme) => ({
       marginTop: '8%',
     },
     [theme.breakpoints.up('lg')]: {
+      marginTop: '0%',
+    },
+    [theme.breakpoints.up('xl')]: {
       marginTop: '6%',
     },
   },

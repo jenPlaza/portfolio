@@ -54,9 +54,13 @@ const useStyles = makeStyles((theme) => ({
       width: '90%',
       height: '135px',
     },
+    [theme.breakpoints.up('lg')]: {
+      margin: '0% 0% 0% 0%',
+      height: '200px',
+    },
     [theme.breakpoints.up('xl')]: {
       margin: '0% 0% 0% 0%',
-      height: '175px',
+      height: '220px',
     },
   },
   navItem: {
