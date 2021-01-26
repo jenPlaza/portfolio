@@ -82,10 +82,19 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   thumbnail: {
-    width: '33%',
-    /* [theme.breakpoints.up('sm')]: {
-        width: '100%',
-      }, */
+    width: '100%',
+    [theme.breakpoints.up('sm')]: {
+      width: '75%',
+    },
+    [theme.breakpoints.up('md')]: {
+      width: '50%',
+    },
+    [theme.breakpoints.up('lg')]: {
+      width: '40%',
+    },
+    [theme.breakpoints.up('xl')]: {
+      width: '30%',
+    },
   },
   h2: {
     padding: '2%',
