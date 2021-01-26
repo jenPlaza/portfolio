@@ -162,7 +162,7 @@ const Header = (props) => {
                 </NavItem>
                 {/* BLOG */}
                 <NavItem className={classes.navItem}>
-                  <Link className={classes.navLink} to="/portfolio/blog/">
+                  <Link className={classes.navLink} to="/portfolio/blog">
                     Blog
                   </Link>
                 </NavItem>
