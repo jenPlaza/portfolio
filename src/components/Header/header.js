@@ -9,7 +9,6 @@ import {
   Nav,
   NavItem,
 } from 'reactstrap';
-import Jello from 'react-reveal/Jello';
 import logo from '../../images/logo_jenPlaza.png';
 
 import { makeStyles } from '@material-ui/core';
@@ -117,7 +116,6 @@ const Header = (props) => {
   return (
     <div>
       <nav
-        //style={{background:useLocation().pathname === '/blog' ? 'transparent' : 'black', }}
         style={{
           background:
             useLocation().pathname === '/blog'
@@ -125,26 +123,11 @@ const Header = (props) => {
               : 'rgba(51, 51, 51, 1)',
         }}
       >
-        <Navbar
-          color="transparent"
-          dark
-          expand="md"
-          className={classes.navbar}
-          /* style={{
-        navbarTogglerIcon:
-          useLocation().pathname === '/blog' ? 'navbar-light' : 'navbar-dark', 
-      }}*/
-        >
+        <Navbar color="transparent" dark expand="md" className={classes.navbar}>
           <NavbarBrand className={classes.navbarBrand} href="/portfolio/">
-            <Jello duration={25000} forever>
-              <img className={classes.img} src={logo} alt="Logo" />
-            </Jello>
+            <img className={classes.img} src={logo} alt="Logo" />
           </NavbarBrand>
-          <NavbarToggler
-            className="navbar-toggler ml-auto"
-            onClick={toggle}
-            //style={{color:useLocation().pathname === '/blog' ? 'transparent' : 'bg-light',}}
-          />
+          <NavbarToggler className="navbar-toggler ml-auto" onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="mr-auto">
               <div className={classes.navItemContainer}>

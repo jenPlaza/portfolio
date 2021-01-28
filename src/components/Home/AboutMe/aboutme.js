@@ -37,7 +37,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   h1: {
-    fontSize: '1.5em',
+    fontSize: '1.75em',
     color: 'white',
     fontFamily: 'grandstander',
     marginBottom: '3%',
@@ -47,7 +47,7 @@ const useStyles = makeStyles((theme) => ({
   },
   about: {
     //border: '1px solid orange',
-    fontSize: '1.25em',
+    fontSize: '1.4em',
     color: '#e2b575',
     //color: 'turquoise',
     marginTop: '15%',
@@ -55,21 +55,22 @@ const useStyles = makeStyles((theme) => ({
       marginTop: '15%',
     },
     [theme.breakpoints.up('md')]: {
-      fontSize: '2.50em',
+      //fontSize: '2.50em',
       marginTop: '0%',
     },
     [theme.breakpoints.up('lg')]: {
-      fontSize: '2.50em',
+      fontSize: '2em',
       backgroundColor: 'rgba(24, 8, 0, 0.2)',
       marginTop: '12%',
     },
     [theme.breakpoints.up('xl')]: {
+      fontSize: '2.2em',
       backgroundColor: 'rgba(24, 8, 0, 0.2)',
       marginTop: '15%',
     },
   },
   button: {
-    fontSize: '0.8em',
+    fontSize: '0.85em',
     textAlign: 'center',
     color: '#0A0300',
     float: 'left',
@@ -81,6 +82,9 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: '50%',
     background: 'turquoise',
     transition: '1s ease-in-out',
+    [theme.breakpoints.up('md')]: {
+      fontSize: '1.2em',
+    },
     [theme.breakpoints.up('lg')]: {
       height: '217px',
       width: '217px',
@@ -89,7 +93,7 @@ const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.up('xl')]: {
       marginTop: '10%',
-      fontSize: '0.75em',
+      //fontSize: '0.75em',
     },
     '&:hover': {
       background: 'transparent',

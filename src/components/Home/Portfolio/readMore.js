@@ -5,7 +5,7 @@ import {
   imageArray,
   hrefArray,
   repoArray,
-} from '../../arrays';
+} from '../../portfolio_arrays';
 
 //Material UI
 import { makeStyles, Modal, Grid } from '@material-ui/core';

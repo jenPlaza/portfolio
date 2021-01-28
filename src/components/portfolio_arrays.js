@@ -1,44 +1,40 @@
-export const recommendations = [
+export const projectArray = [
   {
-    id: '1',
-    img: './images/robert-godwin.jpg',
-    title: 'Prof. Wilson',
-    blurb:
-      'Lorem Ipsum has been the industrys standard dummy text ever since the 1500s...',
-    text:
-      'Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries',
-    href: '/',
+    img: './images/FSP.jpg',
+    title: 'Featured Specialty Plates a Bootstrap application',
+    repo: 'https://github.com/jenPlaza/faithspecialtyplates',
+    href: ' https://jenplaza.github.io/faithspecialtyplates/about.html'
   },
   {
-    id: '2',
-    img: './images/robert-godwin.jpg',
-    title: 'Prof. Wilson',
-    blurb:
-      'Contrary to popular belief, Lorem Ipsum is not simply random text...',
-    text:
-      'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia',
-    href: '/',
+    img: './images/parks2Go.jpg',
+    title: 'Parks 2 Go a React Application ',
+    repo: 'https://github.com/jenPlaza/parks2go',
+    href: 'https://jenplaza.github.io/parks2go/'
   },
   {
-    id: '3',
-    img: './images/robert-godwin.jpg',
-    title: 'Prof. Wilson',
-    blurb:
-      'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration...',
-    text:
-      'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable. . ',
-    href: '/',
+    img: './images/bikeShop.jpg',
+    title: 'Bike Shop: Web Site ',
+    repo: ' https://github.com/jenPlaza/bikeshop',
+    href: 'https://github.com/jenPlaza/bikeshop'
   },
   {
-    id: '4',
-    img: './images/robert-godwin.jpg',
-    title: 'Prof. Wilson',
-    blurb:
-      'There are many variations of passages of Lorem Ipsum available, but the majority...',
-    text:
-      'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable. . ',
-    href: '/',
+    img: './images/WD3.jpg',
+    title: 'Music & Supplies: Contact Form ',
+    repo: ' https://github.com/jenPlaza',
+    href: 'https://github.com/jenPlaza'
   },
+  {
+    img: './images/PIF.jpg',
+    title: 'Pay It Forward Web Site a Heroku Applicaiton',
+    repo: ' https://github.com/fs-tech-degs/capstone-project-2009-jenPlaza',
+    href: 'https://letspayitforward.herokuapp.com'
+  },
+  {
+    img: './images/PRW.jpg',
+    title: 'Post It: Web Site ',
+    repo: ' https://github.com/jenPlaza/postit',
+    href: 'https://github.com/jenPlaza/postit'
+  }
 ];
 
 //project Arrays
@@ -58,7 +54,6 @@ export const imageArray = [
   './images/PIF.jpg',
   './images/PRW.jpg',
 ];
-
 export const imageAlts = [
   'homepage image of Faith Specialty Plates website',
   'homepage image of Parks2Go website',

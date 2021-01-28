@@ -17,10 +17,10 @@ import HomeIcon from '@material-ui/icons/Home';
 //styles
 const useStyles = makeStyles((theme) => ({
   root: {
+    //border: '1px solid pink',
     display: 'flex',
     flexWrap: 'wrap',
-    //border: '1px solid pink',
-    fontSize: '1.5em',
+    paddingBottom: '2%',
   },
   logob: {
     width: '65%',
@@ -41,19 +41,13 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   about: {
-    fontSize: '0.6em',
     //border: '1px solid aqua',
     marginTop: '3%%',
-    [theme.breakpoints.up('sm')]: {
-      fontSize: '0.75em',
-    },
     [theme.breakpoints.up('md')]: {
       margin: '0% 0% 0% -9%',
-      fontSize: '0.75em',
     },
     [theme.breakpoints.up('lg')]: {
       margin: '0% 0% 0% -9%',
-      fontSize: '1em',
     },
   },
   a: {
@@ -63,21 +57,24 @@ const useStyles = makeStyles((theme) => ({
     paddingRight: '1%',
   },
   iconsContainer: {
-    marginTop: '5%',
     //border: '1px solid white',
+    marginTop: '3%',
     width: '90%',
+    [theme.breakpoints.up('sm')]: {
+      marginTop: '1%',
+    },
     [theme.breakpoints.up('md')]: {
-      margin: '-1% 0% 0% 4%',
+      margin: '0% 0% 0% 4%',
     },
   },
   icons: {
     transform: 'scale(1.2)',
-    [theme.breakpoints.up('sm')]: {
-      transform: 'scale(1.6)',
-    },
   },
   socialContainer: {
     marginTop: '2%',
+    [theme.breakpoints.up('sm')]: {
+      marginTop: '-2%',
+    },
     [theme.breakpoints.up('md')]: {
       margin: '-4% 0% 0% 4%',
     },
@@ -87,24 +84,24 @@ const useStyles = makeStyles((theme) => ({
   },
   socialMedia: {
     display: 'inline-block',
-    transform: 'scale(1.5)',
-    margin: '3% 3% 15% 15%',
+    transform: 'scale(1.4)',
+    margin: '3% 3% 10% 15%',
     color: 'white',
     [theme.breakpoints.up('sm')]: {
       marginTop: '5%',
     },
     [theme.breakpoints.up('md')]: {
-      transform: 'scale(1.7)',
+      transform: 'scale(1.6)',
       display: 'block',
-      marginTop: '100%',
+      marginTop: '70%',
     },
     [theme.breakpoints.up('lg')]: {
       display: 'block',
-      marginTop: '65%',
+      marginTop: '45%',
     },
     [theme.breakpoints.up('xl')]: {
       display: 'block',
-      marginTop: '50%',
+      marginTop: '30%',
     },
   },
 }));
@@ -134,25 +131,25 @@ export default function Footer() {
             dedication to each project she begins. With joyfulness and optimism,
             she is....
           </p>
-          <Grid container spacing={5} className={classes.iconsContainer}>
-            <Grid item xs={2}>
+          <Grid container spacing={1} className={classes.iconsContainer}>
+            <Grid item xs={2} sm={1}>
               <PhoneIcon className={classes.icons} />
             </Grid>
-            <Grid item xs={9}>
+            <Grid item xs={10}>
               <p>(407) 535.0537</p>
             </Grid>
           </Grid>
-          <Grid container spacing={3} className={classes.iconsContainer}>
-            <Grid item xs={2}>
+          <Grid container spacing={0} className={classes.iconsContainer}>
+            <Grid item xs={2} sm={1}>
               <HomeIcon className={classes.icons} />
             </Grid>
-            <Grid item xs={9}>
+            <Grid item xs={10}>
               <address>442 Harbor Point Blvd, Orlando Fl. 32835</address>
             </Grid>
           </Grid>
         </Grid>
-        {/*  SOCIAL */}
 
+        {/*  SOCIAL */}
         <Grid item xs={12} md={1} className={classes.socialContainer}>
           <Pulse duration={2000} forever>
             <div>
