@@ -19,12 +19,6 @@ const useStyles = makeStyles((theme) => ({
       marginTop: '-4%',
     },
   },
-  container: {
-    //border: '1px solid blue',
-  },
-  blog: {
-    // border: '1px solid purple',
-  },
   h2: {
     fontFamily: 'Montseratt',
     textAlign: 'center',
@@ -71,12 +65,12 @@ const Article = (props) => {
 
   return (
     <article className={classes.root}>
-      <Grid container spacing={0} className={classes.container}>
-        <Grid item xs={12} className={classes.blog}>
+      <Grid container spacing={0}>
+        <Grid item xs={12}>
           {/* BUTTON CLICKED = FALSE */}
           {!active && (
             <>
-              <h2 className={classes.h2}>{titleArray[0]}</h2>
+              {/* <h2 className={classes.h2}>{titleArray[0]}</h2>
               <Header />
               <h6 className={classes.h6}> {dateArray[0]}</h6>
               <br />
@@ -89,7 +83,7 @@ const Article = (props) => {
               <br />
               <section>
                 <Fetch />
-              </section>
+              </section> */}
             </>
           )}
 

@@ -36,7 +36,7 @@ class Fetch extends Component {
     let { md } = this.state;
 
     return (
-      <div className="post">
+      <div>
         <Markdown children={md} />
       </div>
     );

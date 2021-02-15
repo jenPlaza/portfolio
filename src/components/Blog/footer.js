@@ -11,12 +11,6 @@ const useStyles = makeStyles((theme) => ({
   root: {
     //border: '1px solid red',
   },
-  container: {
-    //border: '1px solid blue',
-  },
-  blog: {
-    //border: '1px solid purple',
-  },
   headshot: {
     width: '120%',
     borderRadius: '50%',
@@ -60,8 +54,8 @@ const Footer = (props) => {
 
       {/* <hr /> */}
       <footer className={classes.root}>
-        <Grid container spacing={0} className={classes.container}>
-          <Grid item xs={12} className={classes.blog}>
+        <Grid container spacing={0}>
+          <Grid item xs={12}>
             <Grid container spacing={3}>
               <Grid item xs={4} md={2}>
                 <img

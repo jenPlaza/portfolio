@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
+import { Route } from 'react-router-dom';
 import {
   blogArray,
   titleArray,
   blurbArray,
   articleArray,
   dateArray,
+  hashtagArray,
 } from './blog_arrays';
 
 //SingleLineGridList
@@ -62,6 +64,7 @@ const SideBarRight = (props) => {
   const [blurb, setBlurb] = useState('');
   const [article, setArticle] = useState('');
   const [date, setDate] = useState('');
+  const [hashtag, setHashtag] = useState('');
   const classes = useStyles();
 
   return (
@@ -79,6 +82,8 @@ const SideBarRight = (props) => {
                   setBlurb(blurbArray[i]);
                   setArticle(articleArray[i]);
                   setDate(dateArray[i]);
+                  setHashtag(hashtagArray[i]);
+                  alert(active);
                 }}
               >
                 <img
@@ -87,6 +92,30 @@ const SideBarRight = (props) => {
                   alt={blogArray[i].title}
                 />
               </button>
+
+              {/*   <Route
+                render={({ history }) => (
+                  <button
+                    key={i}
+                    className={classes.btn}
+                    onClick={() => {
+                      setActive(true);
+                      setTitle(titleArray[i]);
+                      setBlurb(blurbArray[i]);
+                      setArticle(articleArray[i]);
+                      setDate(dateArray[i]);
+                      setHashtag(hashtagArray[i]);
+                      history.push(`/portfolio/blog#${hashtag}`);
+                    }}
+                  >
+                    <img
+                      className={classes.images}
+                      src={blogArray[i].img}
+                      alt={blogArray[i].title}
+                    />
+                  </button>
+                )}
+              /> */}
             </GridListTile>
           ))}
         </GridList>

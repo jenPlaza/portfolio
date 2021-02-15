@@ -10,13 +10,14 @@ import post7 from './md/shower_me_with_divine_love.md';
 
 export const blogArray = [
   {
-    img: './images/EZPZ-min.png',
-    title: '7 Easy Steps to Deploying a Multiroute site to GH-Pages',
+    img: './images/EZPZ_thumb-min.png',
+    title: '7 Easy Steps To Deploying A Multi-Route Site To GH-Pages',
     blurb:
       'Hit you unexpectedly purr purr purr until owner pets why owner not pet me hiss scratch meow if it smells like fish eat as much as you wish',
     article:
       'Cat ipsum dolor sit amet, gimme attention gimme attention gimme attention gimme attention gimme attention gimme attention just kidding i dont want it anymore meow bye look at dog hiiiiiisssss. Weigh eight pounds but take up a full-size bed trip owner up in kitchen i want food purr purr purr until owner pets why owner not pet me hiss scratch meow bite off humans toes. Cereal boxes make for five star accommodation i am the best yet massacre a bird in the living room and then look like the cutest and most innocent animal on the planet or put butt in owners face, yet sun bathe, for the cat was chasing the mouse. Go into a room to decide you didnt want to be in there anyway. Scream at teh bath pounce on unsuspecting person yet lick masters hand at first then bite because im moody eat fish on floor yet find something else more interesting. I like fish ���� im so hungry i’m so hungry but ew not for that so ooooh feather moving feather! yet time to go zooooom. I will ruin the couch with my claws roll on the floor purring your whiskers off and rub face on owner. Lie on your belly and purr when you are asleep scratch my tummy actually i hate you now fight me yet its 3am, time to create some chaos , for human is behind a closed door, emergency! abandoned! meeooowwww!!! and pretend you want to go out but then dont for kitty run to human with blood on mouth from frenzied attack on poor innocent mouse, dont i look cute?. Push your water glass on the floor. Lies down . Catching very fast laser pointer when in doubt, wash yet curl up and sleep on the freshly laundered towels, for cats secretly make all the worlds muffins. Reward the chosen human with a slow blink leave hair everywhere allways wanting food, ignore the squirrels, youll never catch them anyway get scared by doggo also cucumerro mark territory. Your pillow is now my pet bed. ',
     date: ' February 15, 2021',
+    hashtag: '7_easy_steps_to_deploying_a_multiroute_site_to_ghpages',
   },
   /*   {
     img: './images/parks2Go.jpg',
@@ -83,7 +84,7 @@ export const imageAlts = [
   'homepage image of Post It website',
 ];
 export const titleArray = [
-  '7 Easy Steps to Deploying a Multiroute site to GH-Pages',
+  '7 Easy Steps To Deploying A Multi-Route Site To GH-Pages',
   'Espresso medium and, that, dripper iced kopi-luwak ',
   'Candy pie I love I love powder croissant icing cupcake.',
   'Essex girls gutted could be a bit of a git tallywhacker blighty',
@@ -116,4 +117,8 @@ export const dateArray = [
   'April 27, 2021',
   'May 27, 2021',
   'June 27, 2021',
+];
+
+export const hashtagArray = [
+  '7_easy_steps_to_deploying_a_multiroute_site_to_ghpages',
 ];
