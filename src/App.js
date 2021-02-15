@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
     margin: 'auto',
     flexGrow: 1,
     overflow: 'hidden',
-    border: '1px solid #f5f5f',
+    border: '2px solid #f5f5f5',
   },
   recommendationsRow: {
     padding: '4% 5% 1% 5%',

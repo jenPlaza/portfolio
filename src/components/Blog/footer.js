@@ -57,7 +57,8 @@ const Footer = (props) => {
   return (
     <>
       <br />
-      <hr />
+
+      {/* <hr /> */}
       <footer className={classes.root}>
         <Grid container spacing={0} className={classes.container}>
           <Grid item xs={12} className={classes.blog}>

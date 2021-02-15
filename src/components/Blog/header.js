@@ -16,6 +16,7 @@ const useStyles = makeStyles((theme) => ({
   container: {
     //border: '1px solid blue',
     marginTop: '5%',
+    padding: '0% 3% 0% 3%',
     [theme.breakpoints.up('sm')]: {
       margin: '6% 0% -3% 0%',
     },
@@ -26,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
     padding: '0%',
     justifyContent: 'center',
     [theme.breakpoints.up('sm')]: {
-      marginTop: '-3%',
+      marginTop: '-7%',
     },
     [theme.breakpoints.up('lg')]: {
       marginTop: '-4%',

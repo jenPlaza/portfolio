@@ -10,15 +10,15 @@ import post7 from './md/shower_me_with_divine_love.md';
 
 export const blogArray = [
   {
-    img: './images/FSP.jpg',
-    title: 'Hiss at vacuum cleaner kitty time',
+    img: './images/EZPZ-min.png',
+    title: '7 Easy Steps to Deploying a Multiroute site to GH-Pages',
     blurb:
       'Hit you unexpectedly purr purr purr until owner pets why owner not pet me hiss scratch meow if it smells like fish eat as much as you wish',
     article:
       'Cat ipsum dolor sit amet, gimme attention gimme attention gimme attention gimme attention gimme attention gimme attention just kidding i dont want it anymore meow bye look at dog hiiiiiisssss. Weigh eight pounds but take up a full-size bed trip owner up in kitchen i want food purr purr purr until owner pets why owner not pet me hiss scratch meow bite off humans toes. Cereal boxes make for five star accommodation i am the best yet massacre a bird in the living room and then look like the cutest and most innocent animal on the planet or put butt in owners face, yet sun bathe, for the cat was chasing the mouse. Go into a room to decide you didnt want to be in there anyway. Scream at teh bath pounce on unsuspecting person yet lick masters hand at first then bite because im moody eat fish on floor yet find something else more interesting. I like fish ���� im so hungry i’m so hungry but ew not for that so ooooh feather moving feather! yet time to go zooooom. I will ruin the couch with my claws roll on the floor purring your whiskers off and rub face on owner. Lie on your belly and purr when you are asleep scratch my tummy actually i hate you now fight me yet its 3am, time to create some chaos , for human is behind a closed door, emergency! abandoned! meeooowwww!!! and pretend you want to go out but then dont for kitty run to human with blood on mouth from frenzied attack on poor innocent mouse, dont i look cute?. Push your water glass on the floor. Lies down . Catching very fast laser pointer when in doubt, wash yet curl up and sleep on the freshly laundered towels, for cats secretly make all the worlds muffins. Reward the chosen human with a slow blink leave hair everywhere allways wanting food, ignore the squirrels, youll never catch them anyway get scared by doggo also cucumerro mark territory. Your pillow is now my pet bed. ',
-    date: ' January 27, 2021',
+    date: ' February 15, 2021',
   },
-  {
+  /*   {
     img: './images/parks2Go.jpg',
     title: 'Espresso medium and, that, dripper iced kopi-luwak ',
     blurb:
@@ -63,11 +63,11 @@ export const blogArray = [
     article:
       'Spiritual ipsum dolor amet nepal chanting Pink Himalayan Salt stones, divine love spiritual healing chakra clearing. Flower of Life love angels chanting practitioner meditate Buddha shamantic Sacred Geometry goddess lavender. Peace transformation fibonacci, dance harmonic meditate empath candles. Pink Himalayan Salt Buddha chakra clearing bells stones massage manifestation spiritual healing charms Sacred Geometry goddess transformation enlighten. Peace love awakening fibonacci chakras. Angels bells Pink Himalayan Salt sage energy healing. Charms spirit guides card readings, lavender meditate Sacred Geometry healer practitioner chakras healing goddess empath Chinese medicine Light Worker love. Oracle stones manifestation goddess angels Nepal Pink Himalayan Salt, Chinese medicine harmonic. Transformation meditate candles, manifestation massage empath spiritual healing oracle dance pendulum Essential Oils. Pink Himalayan Salt Essential Oils reincarnation candles dance pendulum. Chinese medicine angels peace stones harmonic manifestation tarot Reiki love candles spiritual healing oracle massage herbalist full moon. Angels divine Buddha harmonic card readings massage.',
     date: ' June 27, 2021',
-  },
+  }, */
 ];
 //individual arrays
 export const imageArray = [
-  './images/FSP.jpg',
+  './images/EZPZ-min.png',
   './images/parks2Go.jpg',
   './images/bikeShop.jpg',
   './images/WD3.jpg',
@@ -83,7 +83,7 @@ export const imageAlts = [
   'homepage image of Post It website',
 ];
 export const titleArray = [
-  '7 Easy Steps to Deploying a Multipage site to GH-Pages',
+  '7 Easy Steps to Deploying a Multiroute site to GH-Pages',
   'Espresso medium and, that, dripper iced kopi-luwak ',
   'Candy pie I love I love powder croissant icing cupcake.',
   'Essex girls gutted could be a bit of a git tallywhacker blighty',
@@ -110,7 +110,7 @@ export const blurbArray = [
 export const articleArray = [post1, post2, post3, post4, post5, post6];
 
 export const dateArray = [
-  'January 27, 2021',
+  'February 15, 2021',
   'February 27, 2021',
   'March 27, 2021',
   'April 27, 2021',

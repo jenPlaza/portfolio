@@ -14,6 +14,9 @@ import { makeStyles, Grid, GridList, GridListTile } from '@material-ui/core';
 const useStyles = makeStyles((theme) => ({
   root: {
     //border: '1px solid pink',
+    [theme.breakpoints.up('sm')]: {
+      marginTop: '-7%',
+    },
   },
   container: {
     //border: '1px solid orange',

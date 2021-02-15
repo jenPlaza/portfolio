@@ -9,9 +9,14 @@ import { makeStyles, Grid } from '@material-ui/core';
 //style
 const useStyles = makeStyles((theme) => ({
   root: {
-    // border: '1px solid red',
+    border: '0.5px solid #f5f5f5',
+    borderBottom: '2px solid #3d3d3d',
+    padding: '6% 2% 3% 2%',
+    [theme.breakpoints.up('sm')]: {
+      marginTop: '0%',
+    },
     [theme.breakpoints.up('lg')]: {
-      marginTop: '-2s%',
+      marginTop: '-4%',
     },
   },
   container: {
@@ -20,12 +25,30 @@ const useStyles = makeStyles((theme) => ({
   blog: {
     // border: '1px solid purple',
   },
+  h2: {
+    fontFamily: 'Montseratt',
+    textAlign: 'center',
+    fontSize: '3em',
+    [theme.breakpoints.up('sm')]: {
+      fontSize: '3.5em',
+    },
+    [theme.breakpoints.up('md')]: {
+      fontSize: '4em',
+    },
+    [theme.breakpoints.up('lg')]: {
+      fontSize: '5em',
+    },
+    [theme.breakpoints.up('xl')]: {
+      fontSize: '5em',
+    },
+  },
   h6: {
     //date
     fontSize: '0.75em',
     margin: '-3% 0% 5% 0%',
+    padding: '0% 3% 0% 3%',
     [theme.breakpoints.up('sm')]: {
-      margin: '-1% 0% 2% 0%',
+      margin: '-5% 0% 2% 0%',
     },
     [theme.breakpoints.up('lg')]: {
       margin: '-2% 0% 0% 0%',
@@ -53,7 +76,7 @@ const Article = (props) => {
           {/* BUTTON CLICKED = FALSE */}
           {!active && (
             <>
-              <h2>{titleArray[0]}</h2>
+              <h2 className={classes.h2}>{titleArray[0]}</h2>
               <Header />
               <h6 className={classes.h6}> {dateArray[0]}</h6>
               <br />
@@ -73,7 +96,7 @@ const Article = (props) => {
           {/* BUTTON CLICKED = TRUE */}
           {active && (
             <>
-              <h2>{title}</h2>
+              <h2 className={classes.h2}>{title}</h2>
               <Header />
               <h6 className={classes.h6}> {date}</h6>
               <br />
