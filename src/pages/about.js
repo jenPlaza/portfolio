@@ -62,7 +62,7 @@ const useStyles = makeStyles((theme) => ({
   },
   h3: {
     fontSize: '1.5em',
-    fontFamily: 'grandstander',
+    fontFamily: 'Montseratt',
     color: '#00d1be',
     marginBottom: '4%',
     [theme.breakpoints.up('sm')]: {

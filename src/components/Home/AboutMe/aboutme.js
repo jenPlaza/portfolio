@@ -39,7 +39,7 @@ const useStyles = makeStyles((theme) => ({
   h1: {
     fontSize: '1.75em',
     color: 'white',
-    fontFamily: 'grandstander',
+    fontFamily: 'Montseratt',
     marginBottom: '3%',
     [theme.breakpoints.up('xl')]: {
       marginBottom: '2%',
