@@ -33,7 +33,7 @@ export const projectArray = [
     img: './images/PRW.png',
     title: 'Post It: Web Site ',
     repo: ' https://github.com/jenPlaza/postit',
-    href: 'https://github.com/jenPlaza/postit',
+    href: 'https://jenplaza.github.io/postit/',
   },
   {
     img: './images/toDoList-min.png',
@@ -59,7 +59,7 @@ export const projectTypeArray = [
   'An HTML5 project using semantic elements.',
   'An HTML project using pur vanilla JavaScript',
   'A React application, hosted on Heroku',
-  'A React application, implementing local storage and restful API usage.',
+  'A React application, implementing local storage, real-time typing, and restful API usage.',
   'A Glitch application using HTML5 and Sass Style Sheets',
 ];
 export const imageArray = [
@@ -104,6 +104,6 @@ export const hrefArray = [
   'https://github.com/jenPlaza/bikeshop',
   'https://github.com/jenPlaza/MusicAndSupplies',
   'https://letspayitforward.herokuapp.com',
-  'https://github.com/jenPlaza/postit',
+  'https://jenplaza.github.io/postit/',
   'https://fearless-buffet.glitch.me',
 ];
