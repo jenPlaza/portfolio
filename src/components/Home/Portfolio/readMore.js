@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import {
   titleArray,
+  projectTypeArray,
   descriptionArray,
   imageArray,
   hrefArray,
@@ -122,6 +123,7 @@ export default function ReadMore() {
   const [open, setOpen] = useState(false);
   const [title, setTitle] = useState('');
   const [image, setImage] = useState('');
+  const [projectType, setProjectType] = useState('');
   const [description, setDescription] = useState('');
   const [repo, setRepo] = useState('');
   const [href, setHref] = useState('');
@@ -150,6 +152,7 @@ export default function ReadMore() {
               handleOpen();
               setTitle(titleArray[i]);
               setImage(imageArray[i]);
+              setProjectType(projectTypeArray[i]);
               setDescription(descriptionArray[i]);
               setRepo(repoArray[i]);
               setHref(hrefArray[i]);
@@ -190,6 +193,8 @@ export default function ReadMore() {
                     />
                   </a>
                   <br />
+                  <br />
+                  <h5 className={classes.links}>{projectType}</h5>
                   <br />
                   <h5>{description}</h5>
                   <br />
