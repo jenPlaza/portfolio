@@ -81,13 +81,13 @@ export const imageAlts = [
   'to do list',
 ];
 export const titleArray = [
-  'Featured Specialty Plates a Bootstrap application',
-  'Parks 2 Go a React Application ',
-  'Bike Shop: Web Site ',
+  'Featured Specialty Plates',
+  'Parks 2 Go ',
+  'The Bike Shop',
   'Music & Supplies: Contact Form ',
-  'Pay It Forward Web Site a Heroku Applicaiton',
-  'Post It: Web Site ',
-  'To Do List Manager ',
+  'Pay It Forward',
+  'Post It',
+  'Task Manager List',
 ];
 export const repoArray = [
   'https://github.com/jenPlaza/faithspecialtyplates',
