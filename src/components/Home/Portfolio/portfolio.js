@@ -1,7 +1,7 @@
 // JavaScript Document
 import React from 'react';
 //import ReadMore from './readMore';
-import ReadMore from './readMore_tabs';
+import ReadMore from './readMore';
 
 //material UI
 import { makeStyles, Grid } from '@material-ui/core';
@@ -57,7 +57,7 @@ export default function Portfolio() {
         <Grid item xs={12}>
           <h1 className={classes.header}>Portfolio</h1>
         </Grid>
-        <ReadMore/>
+        <ReadMore />
       </Grid>
     </div>
   );
