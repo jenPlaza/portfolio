@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/portfolio/static/js/main.a02bf2aa.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.a02bf2aa.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.3b9f9dbf.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.3b9f9dbf.js.map",
+    "main.js": "/portfolio/static/js/main.d37d289a.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.d37d289a.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.45a7a960.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.45a7a960.js.map",
     "static/css/2.29c2f1c0.chunk.css": "/portfolio/static/css/2.29c2f1c0.chunk.css",
-    "static/js/2.6df1e9dc.chunk.js": "/portfolio/static/js/2.6df1e9dc.chunk.js",
-    "static/js/2.6df1e9dc.chunk.js.map": "/portfolio/static/js/2.6df1e9dc.chunk.js.map",
-    "static/js/3.3e859fb0.chunk.js": "/portfolio/static/js/3.3e859fb0.chunk.js",
-    "static/js/3.3e859fb0.chunk.js.map": "/portfolio/static/js/3.3e859fb0.chunk.js.map",
+    "static/js/2.50f52b70.chunk.js": "/portfolio/static/js/2.50f52b70.chunk.js",
+    "static/js/2.50f52b70.chunk.js.map": "/portfolio/static/js/2.50f52b70.chunk.js.map",
+    "static/js/3.d9b9d8fe.chunk.js": "/portfolio/static/js/3.d9b9d8fe.chunk.js",
+    "static/js/3.d9b9d8fe.chunk.js.map": "/portfolio/static/js/3.d9b9d8fe.chunk.js.map",
     "index.html": "/portfolio/index.html",
     "static/css/2.29c2f1c0.chunk.css.map": "/portfolio/static/css/2.29c2f1c0.chunk.css.map",
     "static/css/main.6dea0f05.chunk.css.map": "/portfolio/static/css/main.6dea0f05.chunk.css.map",
-    "static/js/2.6df1e9dc.chunk.js.LICENSE.txt": "/portfolio/static/js/2.6df1e9dc.chunk.js.LICENSE.txt",
+    "static/js/2.50f52b70.chunk.js.LICENSE.txt": "/portfolio/static/js/2.50f52b70.chunk.js.LICENSE.txt",
     "static/media/7_Easy_Steps_to_Deploying_a_Multipage_site_to_GH-Pages.791b6a8d.md": "/portfolio/static/media/7_Easy_Steps_to_Deploying_a_Multipage_site_to_GH-Pages.791b6a8d.md",
     "static/media/Hiss_at_vacuum_cleaner_kitty_time.028bc657.md": "/portfolio/static/media/Hiss_at_vacuum_cleaner_kitty_time.028bc657.md",
     "static/media/bkgd_About.478babeb.jpg": "/portfolio/static/media/bkgd_About.478babeb.jpg",
@@ -30,10 +30,10 @@
     "static/media/unite.ad5f5576.jpg": "/portfolio/static/media/unite.ad5f5576.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.3b9f9dbf.js",
+    "static/js/runtime-main.45a7a960.js",
     "static/css/2.29c2f1c0.chunk.css",
-    "static/js/2.6df1e9dc.chunk.js",
+    "static/js/2.50f52b70.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.a02bf2aa.chunk.js"
+    "static/js/main.d37d289a.chunk.js"
   ]
 }
