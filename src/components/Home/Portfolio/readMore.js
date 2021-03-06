@@ -26,9 +26,11 @@ import {
   Tabs,
   Tab,
   GridListTile,
+  Link,
 } from '@material-ui/core';
 import DashboardIcon from '@material-ui/icons/Dashboard';
 import PhotoLibraryIcon from '@material-ui/icons/PhotoLibrary';
+import DoubleArrowIcon from '@material-ui/icons/DoubleArrow';
 const useStyles = makeStyles((theme) => ({
   //MODAL
   container: {
@@ -148,7 +150,11 @@ const useStyles = makeStyles((theme) => ({
     margin: '20% 20%',
     color: 'turquoise',
     [theme.breakpoints.up('xs')]: {
-      margin: '2% 0% 0% 0%',
+      margin: '1% 0% 0% 4%',
+      padding: '1% 1% 1% 1%',
+    },
+    [theme.breakpoints.up('sm')]: {
+      margin: '1% 0% 0% 1%',
       padding: '1% 1% 1% 1%',
     },
   },
@@ -367,7 +373,7 @@ export default function ReadMore() {
                         <Tab label="Design Process" {...a11yProps(2)} />
                       </Tabs>
                     </AppBar>
-
+                    {/* Project Description */}
                     <TabPanel value={value} index={0} className={classes.tab}>
                       <br />
                       <div className={classes.tabContainer}>
@@ -394,11 +400,13 @@ export default function ReadMore() {
                             href={href}
                             target="_blank"
                           >
-                            Go To Site >>
+                            Go To Site
                           </a>
+                          <DoubleArrowIcon className={classes.icon} />
                         </h4>
                       </div>
                     </TabPanel>
+                    {/* Project Synopsis */}
                     <TabPanel value={value} index={1} className={classes.tab}>
                       <Grid container className={classes.tabContainer}>
                         <Grid item xs={12} md={1}>
@@ -418,12 +426,14 @@ export default function ReadMore() {
                               href={repo}
                               target="_blank"
                             >
-                              Visit the repository >>
+                              Visit the repository
                             </a>
+                            <DoubleArrowIcon className={classes.icon} />
                           </h5>
                         </Grid>
                       </Grid>
                     </TabPanel>
+                    {/* Project Design */}
                     <TabPanel value={value} index={2}>
                       <div className={classes.dprocess}>
                         <Grid container className={classes.framesContainer}>
@@ -451,10 +461,16 @@ export default function ReadMore() {
                             >
                               <GridListTile className={classes.itemContainer}>
                                 <div>
-                                  <img
-                                    className={classes.frames}
-                                    src={styleTiles}
-                                  />
+                                  <a
+                                    href={`../portfolio/${styleTiles}`}
+                                    target="_blank"
+                                  >
+                                    <img
+                                      className={classes.frames}
+                                      src={styleTiles}
+                                    />
+                                  </a>
+                                  ß
                                   <h5 className={classes.titleBar}>
                                     Stile Tile
                                   </h5>
@@ -472,10 +488,18 @@ export default function ReadMore() {
                             >
                               <GridListTile className={classes.itemContainer}>
                                 <div>
-                                  <img className={classes.frames} src={lofiD} />
-                                  <h5 className={classes.titleBar}>
-                                    LoFi Desktop wireframes
-                                  </h5>
+                                  <a
+                                    href={`../portfolio/${lofiD}`}
+                                    target="_blank"
+                                  >
+                                    <img
+                                      className={classes.frames}
+                                      src={lofiD}
+                                    />
+                                    <h5 className={classes.titleBar}>
+                                      LoFi Desktop wireframes
+                                    </h5>
+                                  </a>
                                 </div>
                               </GridListTile>
                             </Grid>
@@ -490,10 +514,18 @@ export default function ReadMore() {
                             >
                               <GridListTile className={classes.itemContainer}>
                                 <div>
-                                  <img className={classes.frames} src={lofiM} />
-                                  <h5 className={classes.titleBar}>
-                                    LoFi Mobile wireframes
-                                  </h5>
+                                  <a
+                                    href={`../portfolio/${lofiM}`}
+                                    target="_blank"
+                                  >
+                                    <img
+                                      className={classes.frames}
+                                      src={lofiM}
+                                    />
+                                    <h5 className={classes.titleBar}>
+                                      LoFi Mobile wireframes
+                                    </h5>
+                                  </a>
                                 </div>
                               </GridListTile>
                             </Grid>
@@ -508,10 +540,18 @@ export default function ReadMore() {
                             >
                               <GridListTile className={classes.itemContainer}>
                                 <div>
-                                  <img className={classes.frames} src={hifiD} />
-                                  <h5 className={classes.titleBar}>
-                                    HiFi Desktop wireframes{' '}
-                                  </h5>
+                                  <a
+                                    href={`../portfolio/${hifiD}`}
+                                    target="_blank"
+                                  >
+                                    <img
+                                      className={classes.frames}
+                                      src={hifiD}
+                                    />
+                                    <h5 className={classes.titleBar}>
+                                      HiFi Desktop wireframes{' '}
+                                    </h5>
+                                  </a>
                                 </div>
                               </GridListTile>
                             </Grid>
@@ -526,10 +566,18 @@ export default function ReadMore() {
                             >
                               <GridListTile className={classes.itemContainer}>
                                 <div>
-                                  <img className={classes.frames} src={hifiM} />
-                                  <h5 className={classes.titleBar}>
-                                    HiFi Mobile wireframes
-                                  </h5>
+                                  <a
+                                    href={`../portfolio/${hifiM}`}
+                                    target="_blank"
+                                  >
+                                    <img
+                                      className={classes.frames}
+                                      src={hifiM}
+                                    />
+                                    <h5 className={classes.titleBar}>
+                                      HiFi Mobile wireframes
+                                    </h5>
+                                  </a>
                                 </div>
                               </GridListTile>
                             </Grid>
