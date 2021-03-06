@@ -51,40 +51,40 @@ export const synopsisArray = [
 export const styleTilesArray = [
   './images/FSP_styleTile.png',
   './images/p2go_styleTile.png',
-  'Not acailable at this moment ',
+  'Not available at this moment ',
   './images/PIF_styleTile.png',
-  'Not acailable at this moment ',
-  'Not acailable at this moment ',
+  'Not available at this moment ',
+  'Not available at this moment ',
 ];
 export const lofiDArray = [
   './images/FSP_lofi_desktop.png',
   './images/p2go_lofi_desktop.png',
-  'Not acailable at this moment ',
+  'Not available at this moment ',
   './images/PIF_lofi_desktop.png',
-  'Not acailable at this moment ',
-  'Not acailable at this moment ',
+  'Not available at this moment ',
+  'Not available at this moment ',
 ];
 export const lofiMArray = [
   './images/FSP_lofi_mobile.png',
   './images/p2go_lofi_mobile.png',
-  'Not acailable at this moment ',
+  'Not available at this moment ',
   './images/PIF_lofi_mobile.png',
-  'Not acailable at this moment ',
-  'Not acailable at this moment ',
+  'Not available at this moment ',
+  'Not available at this moment ',
 ];
 export const hifiDArray = [
   './images/FSP_hifi_desktop.png',
   './images/p2go_hifi_desktop.png',
-  'Not acailable at this moment ',
+  'Not available at this moment ',
   './images/PIF_hifi_desktop.png',
-  'Not acailable at this moment ',
-  'Not acailable at this moment ',
+  'Not available at this moment ',
+  'Not available at this moment ',
 ];
 export const hifiMArray = [
   './images/FSP_hifi_mobile.png',
   './images/p2go_hifi_mobile.png',
-  'Not acailable at this moment ',
+  'Not available at this moment ',
   './images/PIF_hifi_mobile.png',
-  'Not acailable at this moment ',
-  'Not acailable at this moment ',
+  'Not available at this moment ',
+  'Not available at this moment ',
 ];
