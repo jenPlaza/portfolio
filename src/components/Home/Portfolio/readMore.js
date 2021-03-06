@@ -470,7 +470,6 @@ export default function ReadMore() {
                                       src={styleTiles}
                                     />
                                   </a>
-                                  ß
                                   <h5 className={classes.titleBar}>
                                     Stile Tile
                                   </h5>
