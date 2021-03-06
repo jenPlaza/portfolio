@@ -34,6 +34,13 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+/* platform sizes
+xs = 375 px,
+  sm = 768 px,
+  md = 992 px,
+  lg = 1500 px,
+  xl = 2000 px, */
+
 export default function App() {
   const classes = useStyles();
   return (

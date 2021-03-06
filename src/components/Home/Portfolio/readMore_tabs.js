@@ -14,20 +14,21 @@ import {
 } from '../../portfolio_arrays';
 import TabPanel from './tabPanel';
 
-//Material UI
-import { AppBar, Tabs, Tab } from '@material-ui/core';
-import DashboardIcon from '@material-ui/icons/Dashboard';
-import PhotoLibraryIcon from '@material-ui/icons/PhotoLibrary';
-import ListSubheader from '@material-ui/core/ListSubheader';
-import GridList from '@material-ui/core/GridList';
-import GridListTile from '@material-ui/core/GridListTile';
-import GridListTileBar from '@material-ui/core/GridListTileBar';
-
 //Images & Icons
 import imgUrl from '../../../images/modalBkgd.png';
 
 //Material UI
-import { makeStyles, Modal, Grid } from '@material-ui/core';
+import {
+  makeStyles,
+  Modal,
+  Grid,
+  AppBar,
+  Tabs,
+  Tab,
+  GridListTile,
+} from '@material-ui/core';
+import DashboardIcon from '@material-ui/icons/Dashboard';
+import PhotoLibraryIcon from '@material-ui/icons/PhotoLibrary';
 const useStyles = makeStyles((theme) => ({
   //MODAL
   container: {
@@ -120,16 +121,16 @@ const useStyles = makeStyles((theme) => ({
   thumbnail: {
     width: '100%',
     [theme.breakpoints.up('sm')]: {
-      width: '75%',
+      width: '100%',
     },
     [theme.breakpoints.up('md')]: {
       width: '50%',
     },
     [theme.breakpoints.up('lg')]: {
-      width: '40%',
+      width: '35%',
     },
     [theme.breakpoints.up('xl')]: {
-      width: '30%',
+      width: '25%',
     },
   },
   //TABS
@@ -138,47 +139,104 @@ const useStyles = makeStyles((theme) => ({
   },
   bar: {
     backgroundColor: '#333333',
-    margin: '-4.4% -6% 0% -4.5%',
-    width: '109%',
+    margin: '-4.5% -6% 0% -4.4%',
+    width: '108.8%',
     padding: '1.5%',
   },
   icon: {
     transform: 'scale(2.5)',
     margin: '20% 20%',
     color: 'turquoise',
+    [theme.breakpoints.up('xs')]: {
+      margin: '2% 0% 0% 0%',
+      padding: '1% 1% 1% 1%',
+    },
   },
   tab: {
-    padding: '3%',
+    padding: '1% 0% 0% 1%',
+  },
+  tabContainer: {
+    //border: '1px solid orange',
+    marginLeft: '-10%',
+    width: '120%',
+    [theme.breakpoints.up('sm')]: {
+      margin: 0,
+      width: '100%',
+    },
+    [theme.breakpoints.up('md')]: {
+      margin: 0,
+      width: '100%',
+    },
   },
   //DESIGN PROCESS
   dprocess: {
     flexGrow: 1,
     flexWrap: 'wrap',
     width: '100%',
+    listStyleType: 'none',
   },
   framesContainer: {
     justifyContent: 'center',
+    //border: '1px solid pink',
+    marginLeft: '-5%',
+    [theme.breakpoints.up('sm')]: {
+      marginLeft: '-3%',
+    },
+    [theme.breakpoints.up('md')]: {
+      margin: 0,
+    },
+  },
+  gridList: {
+    // border: '1px solid red',
+    padding: '0% -1% 1% 1%',
+    marginTop: '-1%',
+    justifyContent: 'center',
+    [theme.breakpoints.up('xs')]: {
+      marginLeft: '-6%',
+    },
+    [theme.breakpoints.up('md')]: {
+      margin: 0,
+    },
+  },
+  paper: {
+    backgroundColor: 'transparent',
+  },
+  itemContainer: {
+    //border: '1px solid green',
+    padding: '2%',
+    listStyleType: 'none',
+    [theme.breakpoints.up('xs')]: {
+      width: 230,
+      height: 180,
+      marginBottom: '3%',
+    },
+    [theme.breakpoints.up('sm')]: {
+      width: 530,
+      height: 400,
+    },
+    [theme.breakpoints.up('md')]: {
+      marginLeft: '-10%',
+      width: 400,
+      height: 270,
+    },
+    [theme.breakpoints.up('lg')]: {
+      margin: 'auto',
+      width: 400,
+      height: 300,
+    },
   },
   frames: {
     width: '100%',
     border: '0.5px solid #f5f5f5',
-  },
-  gridList: {
-    padding: '0% 1% 1% 1%',
-    marginTop: '-1%',
-    justifyContent: 'center',
-  },
-  paper: {
-    listStyleType: 'none',
-    backgroundColor: 'transparent',
-  },
-  itemContainer: {
-    padding: '2%',
-    width: 400,
-    height: 270,
+    [theme.breakpoints.up('md')]: {
+      width: '317px',
+      height: '250px',
+    },
     [theme.breakpoints.up('lg')]: {
-      width: 530,
-      height: 400,
+      width: '80%',
+    },
+    [theme.breakpoints.up('xl')]: {
+      width: '100%',
     },
   },
   titleBar: {
@@ -191,6 +249,18 @@ const useStyles = makeStyles((theme) => ({
     color: '#f5f5f5',
     padding: ' 2% 0.5% 0% 5%',
     marginBottom: '0%',
+    [theme.breakpoints.up('xs')]: {
+      fontSize: '1em',
+    },
+    [theme.breakpoints.up('md')]: {
+      width: '100%',
+    },
+    [theme.breakpoints.up('lg')]: {
+      width: '80%',
+    },
+    [theme.breakpoints.up('xl')]: {
+      width: '100%',
+    },
   },
 }));
 
@@ -206,7 +276,6 @@ export default function ReadMore() {
   const [open, setOpen] = useState(false);
   const [title, setTitle] = useState('');
   const [image, setImage] = useState('');
-  const [projectType, setProjectType] = useState('');
   const [description, setDescription] = useState('');
   const [repo, setRepo] = useState('');
   const [href, setHref] = useState('');
@@ -283,6 +352,7 @@ export default function ReadMore() {
                       <Tabs
                         value={value}
                         onChange={handleChange}
+                        variant="scrollable"
                         TabIndicatorProps={{
                           style: {
                             backgroundColor: 'turquoise',
@@ -293,43 +363,49 @@ export default function ReadMore() {
                           label="Featured Specialty Plates"
                           {...a11yProps(0)}
                         />
-
                         <Tab label="Project Synopsis" {...a11yProps(1)} />
-
                         <Tab label="Design Process" {...a11yProps(2)} />
                       </Tabs>
                     </AppBar>
-                    <TabPanel value={value} index={0}>
+
+                    <TabPanel value={value} index={0} className={classes.tab}>
                       <br />
-                      <a className={classes.links} href={href} target="_blank">
-                        <img
-                          className={classes.thumbnail}
-                          src={image}
-                          alt={'project home page'}
-                        />
-                      </a>
-                      <br />
-                      <br />
-                      <br />
-                      <h5>{description}</h5>
-                      <br />
-                      <br />
-                      <h4>
+                      <div className={classes.tabContainer}>
                         <a
                           className={classes.links}
                           href={href}
                           target="_blank"
                         >
-                          Go To Site >>
+                          <img
+                            className={classes.thumbnail}
+                            src={image}
+                            alt={'project home page'}
+                          />
                         </a>
-                      </h4>
+                        <br />
+                        <br />
+                        <br />
+                        <h5>{description}</h5>
+                        <br />
+                        <br />
+                        <h4>
+                          <a
+                            className={classes.links}
+                            href={href}
+                            target="_blank"
+                          >
+                            Go To Site >>
+                          </a>
+                        </h4>
+                      </div>
                     </TabPanel>
-                    <TabPanel value={value} index={1}>
-                      <Grid container className={classes.tab}>
+                    <TabPanel value={value} index={1} className={classes.tab}>
+                      <Grid container className={classes.tabContainer}>
                         <Grid item xs={12} md={1}>
                           <DashboardIcon className={classes.icon} />
                         </Grid>
-                        <Grid item xs={12} md={11}>
+                        <Grid item xs={12}>
+                          <br />
                           <h5>{synopsis}</h5>
                         </Grid>
 
@@ -350,15 +426,12 @@ export default function ReadMore() {
                     </TabPanel>
                     <TabPanel value={value} index={2}>
                       <div className={classes.dprocess}>
-                        <Grid
-                          container
-                          id="portfolio"
-                          className={classes.framesContainer}
-                        >
+                        <Grid container className={classes.framesContainer}>
                           <Grid item xs={12} md={1}>
                             <PhotoLibraryIcon className={classes.icon} />
                           </Grid>
                           <Grid item xs={12} md={11}>
+                            <br />
                             <h5>
                               Images and optimization have been completed using
                               Adobe Photoshop and all frames have been created
@@ -464,7 +537,7 @@ export default function ReadMore() {
                             {/*     EMPTY Box*/}
                             <Grid
                               item
-                              xs={12}
+                              xs={0}
                               md={6}
                               lg={4}
                               className={classes.paper}
