@@ -37,7 +37,7 @@ export const hrefArray = [
   'https://letspayitforward.herokuapp.com',
   'https://fearless-buffet.glitch.me',
   'https://jenplaza.github.io/postit/',
-  'https://github.com/jenPlaza/bikeshop',
+  'https://jenplaza.github.io/thebikeshop/',
 ];
 
 export const synopsisArray = [
